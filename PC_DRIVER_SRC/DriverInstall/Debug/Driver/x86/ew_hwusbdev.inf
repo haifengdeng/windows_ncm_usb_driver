@@ -1,0 +1,164 @@
+; Windows Virtual Serial Port Setup File
+; Copyright (c) 2002,2003 Huawei Incorporated
+; Manufacturer: Huawei Incorporated
+;
+; This INF file installs a virtual COM port on Win2K system.
+
+[Version]
+signature  = "$WINDOWS NT$"
+Class      = Ports
+Provider   = %HUAWEI%
+ClassGuid  = {4D36E978-E325-11CE-BFC1-08002BE10318}
+DriverVer  = 06/07/2012,1.0.1.4
+CatalogFile= ew_hwusbdev.cat
+
+[SourceDisksNames]
+1000 = %HWSRCDISK%,"",,
+
+[SourceDisksFiles]
+ew_hwusbdev.sys = 1000
+
+[ControlFlags]
+ExcludeFromSelect = *
+
+[DestinationDirs]
+DefaultDestDir = 12
+
+[Manufacturer]
+%HUAWEI% = QcomSerialPort
+
+[QcomSerialPort]
+%QcomDevice00% = QportInstall00, USB\VID_12d1&PID_14BA
+%QcomDevice00% = QportInstall00, USB\VID_12d1&PID_14FE
+%QcomDevice00% = QportInstall00, USB\VID_12d1&PID_14FF
+%QcomDevice00% = QportInstall00, USB\VID_12d1&PID_1446
+%QcomDevice00% = QportInstall00, USB\VID_12d1&PID_1449
+%QcomDevice00% = QportInstall00, USB\VID_12d1&PID_14B2
+%QcomDevice00% = QportInstall00, USB\VID_12d1&PID_14B3
+%QcomDevice00% = QportInstall00, USB\VID_12d1&PID_14B4
+%QcomDevice00% = QportInstall00, USB\VID_12d1&PID_1505
+%QcomDevice00% = QportInstall00, USB\VID_12d1&PID_1580
+%QcomDevice00% = QportInstall00, USB\VID_12d1&PID_1581
+%QcomDevice00% = QportInstall00, USB\VID_12d1&PID_1582
+%QcomDevice00% = QportInstall00, USB\VID_12d1&PID_1583
+%QcomDevice00% = QportInstall00, USB\VID_12d1&PID_1584
+%QcomDevice00% = QportInstall00, USB\VID_12d1&PID_1C0B
+%QcomDevice00% = QportInstall00, USB\VID_12d1&PID_1C1B
+%QcomDevice00% = QportInstall00, USB\VID_12d1&PID_1C24
+%QcomDevice00% = QportInstall00, USB\VID_12d1&PID_151A
+%QcomDevice01% = QportInstall00, USB\VID_12d1&PID_155B
+%QcomDevice00% = QportInstall00, USB\VID_12d1&PID_156A
+
+%VDFDevice% = QportInstall00, USB\VID_12d1&PID_1520
+%VDFDevice% = QportInstall00, USB\VID_12d1&PID_1521
+%VDFDevice% = QportInstall00, USB\VID_12d1&PID_1522
+%VDFDevice% = QportInstall00, USB\VID_12d1&PID_1523
+%VDFDevice% = QportInstall00, USB\VID_12d1&PID_1524
+%VDFDevice% = QportInstall00, USB\VID_12d1&PID_1525
+%VDFDevice% = QportInstall00, USB\VID_12d1&PID_1526
+%VDFDevice% = QportInstall00, USB\VID_12d1&PID_1527
+%VDFDevice% = QportInstall00, USB\VID_12d1&PID_1528
+%VDFDevice% = QportInstall00, USB\VID_12d1&PID_1529
+%VDFDevice% = QportInstall00, USB\VID_12d1&PID_152a
+%VDFDevice% = QportInstall00, USB\VID_12d1&PID_152b
+%VDFDevice% = QportInstall00, USB\VID_12d1&PID_152c
+%VDFDevice% = QportInstall00, USB\VID_12d1&PID_152d
+%VDFDevice% = QportInstall00, USB\VID_12d1&PID_152e
+%VDFDevice% = QportInstall00, USB\VID_12d1&PID_152f
+%VDFDevice% = QportInstall00, USB\VID_12d1&PID_1530
+%VDFDevice% = QportInstall00, USB\VID_12d1&PID_1531
+%VDFDevice% = QportInstall00, USB\VID_12d1&PID_1532
+%VDFDevice% = QportInstall00, USB\VID_12d1&PID_1533
+%VDFDevice% = QportInstall00, USB\VID_12d1&PID_1534
+%VDFDevice% = QportInstall00, USB\VID_12d1&PID_1535
+%VDFDevice% = QportInstall00, USB\VID_12d1&PID_1536
+%VDFDevice% = QportInstall00, USB\VID_12d1&PID_1537
+%VDFDevice% = QportInstall00, USB\VID_12d1&PID_1538
+
+%VDFDevice% = QportInstall00, USB\VID_12d1&PID_1539
+%VDFDevice% = QportInstall00, USB\VID_12d1&PID_153A
+%VDFDevice% = QportInstall00, USB\VID_12d1&PID_153B
+%VDFDevice% = QportInstall00, USB\VID_12d1&PID_153C
+%VDFDevice% = QportInstall00, USB\VID_12d1&PID_153D
+%VDFDevice% = QportInstall00, USB\VID_12d1&PID_153E
+%VDFDevice% = QportInstall00, USB\VID_12d1&PID_153F
+%VDFDevice% = QportInstall00, USB\VID_12d1&PID_1540
+%VDFDevice% = QportInstall00, USB\VID_12d1&PID_1541
+%VDFDevice% = QportInstall00, USB\VID_12d1&PID_1542
+%VDFDevice% = QportInstall00, USB\VID_12d1&PID_1543
+%VDFDevice% = QportInstall00, USB\VID_12d1&PID_1544
+%VDFDevice% = QportInstall00, USB\VID_12d1&PID_1545
+%VDFDevice% = QportInstall00, USB\VID_12d1&PID_1546
+%VDFDevice% = QportInstall00, USB\VID_12d1&PID_1547
+%VDFDevice% = QportInstall00, USB\VID_12d1&PID_1548
+%VDFDevice% = QportInstall00, USB\VID_12d1&PID_1549
+%VDFDevice% = QportInstall00, USB\VID_12d1&PID_154A
+%VDFDevice% = QportInstall00, USB\VID_12d1&PID_154B
+%VDFDevice% = QportInstall00, USB\VID_12d1&PID_154C
+%VDFDevice% = QportInstall00, USB\VID_12d1&PID_154D
+%VDFDevice% = QportInstall00, USB\VID_12d1&PID_154E
+%VDFDevice% = QportInstall00, USB\VID_12d1&PID_154F
+%VDFDevice% = QportInstall00, USB\VID_12d1&PID_1550
+%VDFDevice% = QportInstall00, USB\VID_12d1&PID_1551
+%VDFDevice% = QportInstall00, USB\VID_12d1&PID_1552
+%VDFDevice% = QportInstall00, USB\VID_12d1&PID_1553
+%VDFDevice% = QportInstall00, USB\VID_12d1&PID_1554
+%VDFDevice% = QportInstall00, USB\VID_12d1&PID_1555
+%VDFDevice% = QportInstall00, USB\VID_12d1&PID_1556
+%VDFDevice% = QportInstall00, USB\VID_12d1&PID_1557
+%VDFDevice% = QportInstall00, USB\VID_12d1&PID_1558
+%VDFDevice% = QportInstall00, USB\VID_12d1&PID_1559
+%VDFDevice% = QportInstall00, USB\VID_12d1&PID_155A
+%VDFDevice% = QportInstall00, USB\VID_12d1&PID_14C1
+%VDFDevice% = QportInstall00, USB\VID_12d1&PID_14C2
+%VDFDevice% = QportInstall00, USB\VID_12d1&PID_14C3
+%VDFDevice% = QportInstall00, USB\VID_12d1&PID_14C4
+%VDFDevice% = QportInstall00, USB\VID_12d1&PID_14C5
+%VDFDevice% = QportInstall00, USB\VID_12d1&PID_14AD
+%VDFDevice% = QportInstall00, USB\VID_12d1&PID_14B7
+%VDFDevice% = QportInstall00, USB\VID_12d1&PID_14D1
+
+
+%QcomDevice01% = QportInstall00, USB\VID_12d1&PID_14B5
+
+
+%QcomDevice00% = QportInstall00, USB\VID_12d1&PID_15FF&MI_03
+
+; ###### Installation Section ######
+
+[QportInstall00.NT]
+CopyFiles = CopyFileSection00
+AddReg = All00, AddReg.NT
+
+[QportInstall00.NT.Services]
+AddService = ew_hwusbdev,  0x00000002, Qport_Service_Inst00
+
+[Qport_Service_Inst00]
+DisplayName   = "Huawei MobileBroadband USB PNP Device"
+ServiceType   = 1
+StartType     = 3
+ErrorControl  = 1
+ServiceBinary = %12%\ew_hwusbdev.sys
+AddReg        = PowerReg
+
+[CopyFileSection00]
+ew_hwusbdev.sys
+
+[All00]
+HKR,,NTMPDriver,,ew_hwusbdev.sys
+HKR,,PortIdentify,,HWPNP
+
+
+[AddReg.NT]
+HKR,,PortSubClass,1,01
+HKR,,EnumPropPages32,,"MsPorts.dll,SerialPortPropPageProvider"
+
+[PowerReg]
+
+[Strings]
+HUAWEI   = "HUAWEI Incorporated"
+HWSRCDISK = "HUAWEI Multimedia USB Driver Disk"
+QcomDevice00 = "HUAWEI Mobile Connect - USB Device"
+VDFDevice = "Vodafone Mobile Broadband-USB Device (Huawei)"
+QcomDevice01 = "Mobile Connect - USB Device"
+

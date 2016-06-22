@@ -1,0 +1,13 @@
+USB HOST DRIVER (USB_WIN2KXP)
+SOURCE
+CM ID: HM11-V3865-32
+Version: 2.0.53
+ECO:  C117609
+
+USB_WIN2KXP2053s.exe is a self-extracting file.  To extract the files at the
+command line, enter:  USB_WIN2KXP2053s.
+
+pack_s.lst is a listing of all files included in USB_WIN2KXP2053s.exe
+
+Controlled Distribution. To be reproduced, distributed or redistributed only by Qualcomm’s Configuration Management. 
+This software may be subject to U.S. and international export, re-export, or transfer (“export”) laws. Diversion contrary to U.S. and international law is strictly prohibited. Copyright © 2008 QUALCOMM Incorporated. All rights reserved. Licensed Material – Restricted Use

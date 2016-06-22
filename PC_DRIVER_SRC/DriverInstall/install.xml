@@ -1,0 +1,280 @@
+<xml>
+    <version>
+        <DriverVersion>4.25.10.00</DriverVersion>
+        <ConfigVersion>1.0.0.0</ConfigVersion>
+    </version>
+
+    <install>
+        <system version="WinXp">
+
+            <inf>
+                 <file desc="SWITCH">
+                        <name>usbfake.inf</name>
+                        <flag>0</flag>
+                 </file>
+                 <file desc="SERIAL">
+                        <name>qcser.inf</name>
+                        <flag>0</flag>
+                 </file>
+                 <file desc="MODEM">
+                        <name>qcmdm.inf</name>
+                        <flag>0</flag>
+                 </file>
+                 <file desc="NDIS">
+                        <name>ndiswdm.inf</name>
+                        <flag>0</flag>
+                 </file>
+            </inf>
+
+            <sys>
+                 <file desc="SWITCH">
+                        <name>usbfake.sys</name>
+                        <path>system32\drivers</path>
+                        <delete>1</delete>
+                        <flag>0</flag>
+                 </file>
+                 <file desc="SERIAL">
+                        <name>qcusbser.sys</name>
+                        <path>system32\drivers</path>
+                        <delete>1</delete>
+                        <flag>0</flag>
+                 </file>
+                 <file desc="NDIS">
+                        <name>ndiswdm.sys</name>
+                        <path>system32\drivers</path>
+                        <delete>1</delete>
+                        <flag>0</flag>
+                 </file>
+            </sys>
+            <dll>
+                 <file desc="COINSTALLER">
+                        <name>WdfCoInstaller01007.dll</name>
+                        <path>system32\drivers</path>
+                        <delete>0</delete>
+                        <flag>1</flag>
+                 </file>
+            </dll>
+
+            <dev>
+                 <file desc="ENUM">
+                        <name>ew_jubusenum.inf</name>
+                        <id>huawei_enum_vbus</id>
+                        <flag>1</flag>
+                 </file>
+            </dev>
+
+            <parameter>
+
+            </parameter>
+
+        </system>
+
+        <system version="WinVista">
+
+                <inf>
+                 <file desc="SWITCH">
+                        <name>usbfake.inf</name>
+                        <flag>0</flag>
+                 </file>
+                 <file desc="SERIAL">
+                        <name>qcser.inf</name>
+                        <flag>0</flag>
+                 </file>
+                 <file desc="MODEM">
+                        <name>qcmdm.inf</name>
+                        <flag>0</flag>
+                 </file>
+                 <file desc="NDIS">
+                        <name>ndiswdm.inf</name>
+                        <flag>0</flag>
+                 </file>
+            </inf>
+
+            <sys>
+                 <file desc="SWITCH">
+                        <name>usbfake.sys</name>
+                        <path>system32\drivers</path>
+                        <delete>1</delete>
+                        <flag>0</flag>
+                 </file>
+                 <file desc="SERIAL">
+                        <name>qcusbser.sys</name>
+                        <path>system32\drivers</path>
+                        <delete>1</delete>
+                        <flag>0</flag>
+                 </file>
+                 <file desc="NDIS">
+                        <name>ndiswdm.sys</name>
+                        <path>system32\drivers</path>
+                        <delete>1</delete>
+                        <flag>0</flag>
+                 </file>
+            </sys>
+            <dll>
+                 <file desc="COINSTALLER">
+                        <name>WdfCoInstaller01007.dll</name>
+                        <path>system32\drivers</path>
+                        <delete>0</delete>
+                        <flag>1</flag>
+                 </file>
+            </dll>
+
+            <dev>
+                 <file desc="ENUM">
+                        <name>ew_jubusenum.inf</name>
+                        <id>huawei_enum_vbus</id>
+                        <flag>1</flag>
+                 </file>
+            </dev>
+
+            <parameter>
+
+            </parameter>
+
+
+        </system>
+
+        <system version="Win7">
+
+                  <inf>
+                 <file desc="SWITCH">
+                        <name>usbfake.inf</name>
+                        <flag>0</flag>
+                 </file>
+                 <file desc="SERIAL">
+                        <name>qcser.inf</name>
+                        <flag>0</flag>
+                 </file>
+                 <file desc="MODEM">
+                        <name>qcmdm.inf</name>
+                        <flag>0</flag>
+                 </file>
+                 <file desc="NDIS">
+                        <name>ndiswdm.inf</name>
+                        <flag>0</flag>
+                 </file>
+            </inf>
+
+            <sys>
+                 <file desc="SWITCH">
+                        <name>usbfake.sys</name>
+                        <path>system32\drivers</path>
+                        <delete>1</delete>
+                        <flag>0</flag>
+                 </file>
+                 <file desc="SERIAL">
+                        <name>qcusbser.sys</name>
+                        <path>system32\drivers</path>
+                        <delete>1</delete>
+                        <flag>0</flag>
+                 </file>
+                 <file desc="NDIS">
+                        <name>ndiswdm.sys</name>
+                        <path>system32\drivers</path>
+                        <delete>1</delete>
+                        <flag>0</flag>
+                 </file>
+            </sys>
+            <dll>
+                 <file desc="COINSTALLER">
+                        <name>WdfCoInstaller01007.dll</name>
+                        <path>system32\drivers</path>
+                        <delete>0</delete>
+                        <flag>1</flag>
+                 </file>
+            </dll>
+
+            <dev>
+                 <file desc="ENUM">
+                        <name>ew_jubusenum.inf</name>
+                        <id>huawei_enum_vbus</id>
+                        <flag>1</flag>
+                 </file>
+            </dev>
+
+            <parameter>
+                 <registry desc="wwan connect timeout">
+                         <root>HKEY_LOCAL_MACHINE</root>
+                         <path>SYSTEM\CurrentControlSet\Services\ewusbmbb</path>
+                         <key>WWANConnectTimeOut</key>
+                         <type>REG_DWORD</type>
+                         <value>150</value>
+                         <delete>1</delete>
+                 </registry>
+            </parameter>
+
+        </system>
+	<system version="Win8">
+
+                <inf>
+                 <file desc="SWITCH">
+                        <name>usbfake.inf</name>
+                        <flag>0</flag>
+                 </file>
+                 <file desc="SERIAL">
+                        <name>qcser.inf</name>
+                        <flag>0</flag>
+                 </file>
+                 <file desc="MODEM">
+                        <name>qcmdm.inf</name>
+                        <flag>0</flag>
+                 </file>
+                 <file desc="NDIS">
+                        <name>ndiswdm.inf</name>
+                        <flag>0</flag>
+                 </file>
+            </inf>
+
+            <sys>
+                 <file desc="SWITCH">
+                        <name>usbfake.sys</name>
+                        <path>system32\drivers</path>
+                        <delete>1</delete>
+                        <flag>0</flag>
+                 </file>
+                 <file desc="SERIAL">
+                        <name>qcusbser.sys</name>
+                        <path>system32\drivers</path>
+                        <delete>1</delete>
+                        <flag>0</flag>
+                 </file>
+                 <file desc="NDIS">
+                        <name>ndiswdm.sys</name>
+                        <path>system32\drivers</path>
+                        <delete>1</delete>
+                        <flag>0</flag>
+                 </file>
+            </sys>
+            <dll>
+                 <file desc="COINSTALLER">
+                        <name>WdfCoInstaller01007.dll</name>
+                        <path>system32\drivers</path>
+                        <delete>0</delete>
+                        <flag>1</flag>
+                 </file>
+            </dll>
+
+            <dev>
+                 <file desc="ENUM">
+                        <name>ew_jubusenum.inf</name>
+                        <id>huawei_enum_vbus</id>
+                        <flag>1</flag>
+                 </file>
+            </dev>
+
+            <parameter>
+                 <registry desc="wwan connect timeout">
+                         <root>HKEY_LOCAL_MACHINE</root>
+                         <path>SYSTEM\CurrentControlSet\Services\ewusbmbb</path>
+                         <key>WWANConnectTimeOut</key>
+                         <type>REG_DWORD</type>
+                         <value>150</value>
+                         <delete>1</delete>
+                 </registry>
+            </parameter>
+
+        </system>
+
+    </install>
+
+</xml>

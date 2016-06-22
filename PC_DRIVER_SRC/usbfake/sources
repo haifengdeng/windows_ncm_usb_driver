@@ -1,0 +1,28 @@
+TARGETNAME=usbfake
+TARGETTYPE=DRIVER
+DRIVERTYPE=WDM
+
+C_DEFINES= $(C_DEFINES) -DWMI_SUPPORT -DUSB2
+
+TARGETPATH=obj
+
+INCLUDES=$(DDK_INC_PATH);$(MFC_INC_PATH);$(INCLUDES)		   
+
+NTTARGETFILE0=mofcomp
+
+USE_MAPSYM=1
+
+TARGETLIBS=$(DDK_LIB_PATH)\hidclass.lib \
+           $(DDK_LIB_PATH)\usbd.lib	\
+	   $(DDK_LIB_PATH)\ntoskrnl.lib
+TARGETLIBS=$(TARGETLIBS) $(DDK_LIB_PATH)\wmilib.lib
+
+MSC_WARNING_LEVEL=/W3 /WX
+
+SOURCES=bulkusb.c \
+	bulkpnp.c \
+	bulkpwr.c \
+	bulkdev.c \
+	bulkwmi.c \
+	bulkrwr.c \
+        bulkusb.rc

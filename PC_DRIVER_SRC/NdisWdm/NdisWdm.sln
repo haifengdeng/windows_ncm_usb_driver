@@ -1,0 +1,44 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "NdisWdm", "NdisWdm.vcproj", "{310CCCCB-59AD-4282-AF6C-A2AED0C516C5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		DebugWIN7|Win32 = DebugWIN7|Win32
+		DebugXP|Win32 = DebugXP|Win32
+		DebugWIN7_X64|Win32 = DebugWIN7_X64|Win32
+		DebugXP_X64|Win32 = DebugXP_X64|Win32
+		Release|Win32 = Release|Win32
+		ReleaseWIN7|Win32 = ReleaseWIN7|Win32
+		ReleaseXP|Win32 = ReleaseXP|Win32
+		ReleaseWIN7_X64|Win32 = ReleaseWIN7_X64|Win32
+		ReleaseXP_X64|Win32 = ReleaseXP_X64|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{310CCCCB-59AD-4282-AF6C-A2AED0C516C5}.Debug|Win32.ActiveCfg = DebugWIN7|Win32
+		{310CCCCB-59AD-4282-AF6C-A2AED0C516C5}.Debug|Win32.Build.0 = DebugWIN7|Win32
+		{310CCCCB-59AD-4282-AF6C-A2AED0C516C5}.DebugWIN7|Win32.ActiveCfg = DebugWIN7|Win32
+		{310CCCCB-59AD-4282-AF6C-A2AED0C516C5}.DebugWIN7|Win32.Build.0 = DebugWIN7|Win32
+		{310CCCCB-59AD-4282-AF6C-A2AED0C516C5}.DebugXP|Win32.ActiveCfg = DebugXP|Win32
+		{310CCCCB-59AD-4282-AF6C-A2AED0C516C5}.DebugXP|Win32.Build.0 = DebugXP|Win32
+		{310CCCCB-59AD-4282-AF6C-A2AED0C516C5}.DebugWIN7_X64|Win32.ActiveCfg = DebugWIN7_X64|Win32
+		{310CCCCB-59AD-4282-AF6C-A2AED0C516C5}.DebugWIN7_X64|Win32.Build.0 = DebugWIN7_X64|Win32
+		{310CCCCB-59AD-4282-AF6C-A2AED0C516C5}.DebugXP_X64|Win32.ActiveCfg = DebugXP_X64|Win32
+		{310CCCCB-59AD-4282-AF6C-A2AED0C516C5}.DebugXP_X64|Win32.Build.0 = DebugXP_X64|Win32
+		{310CCCCB-59AD-4282-AF6C-A2AED0C516C5}.Release|Win32.ActiveCfg = ReleaseWIN7|Win32
+		{310CCCCB-59AD-4282-AF6C-A2AED0C516C5}.Release|Win32.Build.0 = ReleaseWIN7|Win32
+		{310CCCCB-59AD-4282-AF6C-A2AED0C516C5}.ReleaseWIN7|Win32.ActiveCfg = ReleaseWIN7|Win32
+		{310CCCCB-59AD-4282-AF6C-A2AED0C516C5}.ReleaseWIN7|Win32.Build.0 = ReleaseWIN7|Win32
+		{310CCCCB-59AD-4282-AF6C-A2AED0C516C5}.ReleaseXP|Win32.ActiveCfg = ReleaseXP|Win32
+		{310CCCCB-59AD-4282-AF6C-A2AED0C516C5}.ReleaseXP|Win32.Build.0 = ReleaseXP|Win32
+		{310CCCCB-59AD-4282-AF6C-A2AED0C516C5}.ReleaseWIN7_X64|Win32.ActiveCfg = ReleaseWIN7_X64|Win32
+		{310CCCCB-59AD-4282-AF6C-A2AED0C516C5}.ReleaseWIN7_X64|Win32.Build.0 = ReleaseWIN7_X64|Win32
+		{310CCCCB-59AD-4282-AF6C-A2AED0C516C5}.ReleaseXP_X64|Win32.ActiveCfg = ReleaseXP_X64|Win32
+		{310CCCCB-59AD-4282-AF6C-A2AED0C516C5}.ReleaseXP_X64|Win32.Build.0 = ReleaseXP_X64|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,723 @@
+; Windows XP Virtual Serial Port Setup File
+; Copyright (c) 2006-2007 Qualcomm Incorporated
+; Manufacturer: Qualcomm Incorporated
+;
+
+[Version]
+signature  = "$WINDOWS NT$"
+Class      = Ports
+Provider   = %QUALCOMM%
+ClassGuid  = {4D36E978-E325-11CE-BFC1-08002BE10318}
+DriverVer  = 11/30/2006,2.0.3.6
+Catalogfile = usbser.cat
+
+[ControlFlags]
+ExcludeFromSelect = *
+
+[SourceDisksNames]
+  1000 = %QcomSrcDisk%,"",,
+
+[SourceDisksFiles]
+  usbser.sys = 1000
+  usb.inf    = 1000
+
+[Manufacturer]
+%QUALCOMM% = QcomSerialPort,NTamd64,NTx86
+
+[QcomSerialPort]
+
+%DIAGDeviceDesc% = QportInstall00, USB\Class_ff&Subclass_02&Prot_03
+%PCUIDeviceDesc% = QportInstall00, USB\Class_ff&Subclass_02&Prot_02
+%GPSDeviceDesc% = QportInstall00, USB\Class_ff&Subclass_02&Prot_05
+%ControlDeviceDesc% = QportInstall00, USB\Class_ff&Subclass_02&Prot_06	
+%BTDeviceDesc%   = QportInstall00, USB\Class_ff&Subclass_02&Prot_0A
+%FingerPintDesc% = QportInstall00, USB\Class_ff&Subclass_02&Prot_0B
+%PCVoiceDeviceDesc% = QportInstall00, USB\Class_ff&Subclass_02&Prot_0E
+%3GPCUIDeviceDesc% = QportInstall00, USB\Class_ff&Subclass_02&Prot_12
+%3GDIAGDeviceDesc% = QportInstall00, USB\Class_ff&Subclass_02&Prot_13
+%3GGPSDeviceDesc% = QportInstall00, USB\Class_ff&Subclass_02&Prot_14
+%3GPCVoiceDeviceDesc% = QportInstall00, USB\Class_ff&Subclass_02&Prot_15
+
+%HWShellADeviceDesc% = QportInstall00, USB\Class_ff&Subclass_02&Prot_18
+%HWShellBDeviceDesc% = QportInstall00, USB\Class_ff&Subclass_02&Prot_19
+%HWSerialADeviceDesc% = QportInstall00, USB\Class_ff&Subclass_02&Prot_1A
+%HWSerialBDeviceDesc% = QportInstall00, USB\Class_ff&Subclass_02&Prot_1B
+%HWSerialCDeviceDesc% = QportInstall00, USB\Class_ff&Subclass_02&Prot_1C
+
+%VDFDiagDesc% = QportInstall00, USB\Class_ff&Subclass_02&Prot_33
+%VDFPcuiDesc% = QportInstall00, USB\Class_ff&Subclass_02&Prot_32
+%VDFGPSDesc% = QportInstall00, USB\Class_ff&Subclass_02&Prot_35
+%VDFCtrlDesc% = QportInstall00, USB\Class_ff&Subclass_02&Prot_36 
+%VDFBTDesc% = QportInstall00, USB\Class_ff&Subclass_02&Prot_3A
+%VDFFingerPrint% = QportInstall00, USB\Class_ff&Subclass_02&Prot_3B
+%VDFPCVoiceDesc% = QportInstall00, USB\Class_ff&Subclass_02&Prot_3E
+
+%VDFShellADeviceDesc% = QportInstall00, USB\Class_ff&Subclass_02&Prot_48
+%VDFShellBDeviceDesc% = QportInstall00, USB\Class_ff&Subclass_02&Prot_49
+%VDFSerialADeviceDesc% = QportInstall00, USB\Class_ff&Subclass_02&Prot_4A
+%VDFSerialBDeviceDesc% = QportInstall00, USB\Class_ff&Subclass_02&Prot_4B
+%VDFSerialCDeviceDesc% = QportInstall00, USB\Class_ff&Subclass_02&Prot_4C
+
+%New3GPCUIDeviceDesc% = QportInstall00, USB\Class_ff&Subclass_02&Prot_62
+%New3GDIAGDeviceDesc% = QportInstall00, USB\Class_ff&Subclass_02&Prot_63
+%New3GGPSDeviceDesc% = QportInstall00, USB\Class_ff&Subclass_02&Prot_65
+%New3GPCVoiceDeviceDesc% = QportInstall00, USB\Class_ff&Subclass_02&Prot_6E
+%NewBTDeviceDesc%   = QportInstall00, USB\Class_ff&Subclass_02&Prot_6A
+%NewFingerPintDesc% = QportInstall00, USB\Class_ff&Subclass_02&Prot_6B
+%NewControlDeviceDesc% = QportInstall00, USB\Class_ff&Subclass_02&Prot_66
+
+
+%ShellADeviceDesc% = QportInstall00, USB\Class_ff&Subclass_02&Prot_78
+%ShellBDeviceDesc% = QportInstall00, USB\Class_ff&Subclass_02&Prot_79
+%SerialADeviceDesc% = QportInstall00, USB\Class_ff&Subclass_02&Prot_7A
+%SerialBDeviceDesc% = QportInstall00, USB\Class_ff&Subclass_02&Prot_7B
+%SerialCDeviceDesc% = QportInstall00, USB\Class_ff&Subclass_02&Prot_7C
+
+%DIAGDeviceDesc% = QportInstall00, USB\VID_12D1&Subclass_02&Prot_03
+%PCUIDeviceDesc% = QportInstall00, USB\VID_12D1&Subclass_02&Prot_02
+%GPSDeviceDesc% = QportInstall00, USB\VID_12D1&Subclass_02&Prot_05
+%ControlDeviceDesc% = QportInstall00, USB\VID_12D1&Subclass_02&Prot_06	
+%BTDeviceDesc%   = QportInstall00, USB\VID_12D1&Subclass_02&Prot_0A
+%FingerPintDesc% = QportInstall00, USB\VID_12D1&Subclass_02&Prot_0B
+%PCVoiceDeviceDesc% = QportInstall00, USB\VID_12D1&Subclass_02&Prot_0E
+%3GPCUIDeviceDesc% = QportInstall00, USB\VID_12D1&Subclass_02&Prot_12
+%3GDIAGDeviceDesc% = QportInstall00, USB\VID_12D1&Subclass_02&Prot_13
+%3GGPSDeviceDesc% = QportInstall00, USB\VID_12D1&Subclass_02&Prot_14
+%3GPCVoiceDeviceDesc% = QportInstall00, USB\VID_12D1&Subclass_02&Prot_15
+
+%HWShellADeviceDesc% = QportInstall00, USB\VID_12D1&Subclass_02&Prot_18
+%HWShellBDeviceDesc% = QportInstall00, USB\VID_12D1&Subclass_02&Prot_19
+%HWSerialADeviceDesc% = QportInstall00, USB\VID_12D1&Subclass_02&Prot_1A
+%HWSerialBDeviceDesc% = QportInstall00, USB\VID_12D1&Subclass_02&Prot_1B
+%HWSerialCDeviceDesc% = QportInstall00, USB\VID_12D1&Subclass_02&Prot_1C
+
+%VDFDiagDesc% = QportInstall00, USB\VID_12D1&Subclass_02&Prot_33
+%VDFPcuiDesc% = QportInstall00, USB\VID_12D1&Subclass_02&Prot_32
+%VDFGPSDesc% = QportInstall00, USB\VID_12D1&Subclass_02&Prot_35
+%VDFCtrlDesc% = QportInstall00, USB\VID_12D1&Subclass_02&Prot_36 
+%VDFBTDesc% = QportInstall00, USB\VID_12D1&Subclass_02&Prot_3A
+%VDFFingerPrint% = QportInstall00, USB\VID_12D1&Subclass_02&Prot_3B
+%VDFPCVoiceDesc% = QportInstall00, USB\VID_12D1&Subclass_02&Prot_3E
+
+%VDFShellADeviceDesc% = QportInstall00, USB\VID_12D1&Subclass_02&Prot_48
+%VDFShellBDeviceDesc% = QportInstall00, USB\VID_12D1&Subclass_02&Prot_49
+%VDFSerialADeviceDesc% = QportInstall00, USB\VID_12D1&Subclass_02&Prot_4A
+%VDFSerialBDeviceDesc% = QportInstall00, USB\VID_12D1&Subclass_02&Prot_4B
+%VDFSerialCDeviceDesc% = QportInstall00, USB\VID_12D1&Subclass_02&Prot_4C
+
+%New3GPCUIDeviceDesc% = QportInstall00, USB\VID_12D1&Subclass_02&Prot_62
+%New3GDIAGDeviceDesc% = QportInstall00, USB\VID_12D1&Subclass_02&Prot_63
+%New3GGPSDeviceDesc% = QportInstall00, USB\VID_12D1&Subclass_02&Prot_65
+%New3GPCVoiceDeviceDesc% = QportInstall00, USB\VID_12D1&Subclass_02&Prot_6E
+%NewBTDeviceDesc%   = QportInstall00, USB\VID_12D1&Subclass_02&Prot_6A
+%NewFingerPintDesc% = QportInstall00, USB\VID_12D1&Subclass_02&Prot_6B
+%NewControlDeviceDesc% = QportInstall00, USB\VID_12D1&Subclass_02&Prot_66
+
+
+%ShellADeviceDesc% = QportInstall00, USB\VID_12D1&Subclass_02&Prot_78
+%ShellBDeviceDesc% = QportInstall00, USB\VID_12D1&Subclass_02&Prot_79
+%SerialADeviceDesc% = QportInstall00, USB\VID_12D1&Subclass_02&Prot_7A
+%SerialBDeviceDesc% = QportInstall00, USB\VID_12D1&Subclass_02&Prot_7B
+%SerialCDeviceDesc% = QportInstall00, USB\VID_12D1&Subclass_02&Prot_7C
+
+%DIAGDeviceDesc% = QportInstall00, USB\VID_12D1&PID_1C05&MI_01
+%PCUIDeviceDesc% = QportInstall00, USB\VID_12D1&PID_1C05&MI_02
+%DIAGDeviceDesc% = QportInstall00, USB\VID_12D1&PID_1C06&MI_00
+%PCUIDeviceDesc% = QportInstall00, USB\VID_12D1&PID_1C06&MI_02
+%DIAGDeviceDesc% = QportInstall00, USB\VID_12D1&PID_1C07&MI_02
+%PCUIDeviceDesc% = QportInstall00, USB\VID_12D1&PID_1C07&MI_03
+%BTDeviceDesc%   = QportInstall00, USB\VID_12D1&PID_1C07&MI_06
+%PCUIDeviceDesc% = QportInstall00, USB\VID_12D1&PID_1C08&MI_01
+%PCUIDeviceDesc% = QportInstall00, USB\VID_12D1&PID_1C09&MI_00
+%DIAGDeviceDesc% = QportInstall00, USB\VID_12D1&PID_1C09&MI_02
+%PCUIDeviceDesc% = QportInstall00, USB\VID_12D1&PID_1C0A&MI_00
+%DIAGDeviceDesc% = QportInstall00, USB\VID_12D1&PID_1C0C&MI_02
+%PCUIDeviceDesc% = QportInstall00, USB\VID_12D1&PID_1C0C&MI_03
+%ControlDeviceDesc% = QportInstall00, USB\VID_12D1&PID_1C0C&MI_04
+%DIAGDeviceDesc% = QportInstall00, USB\VID_12D1&PID_1C0D&MI_01
+%PCUIDeviceDesc% = QportInstall00, USB\VID_12D1&PID_1C0D&MI_02
+%ControlDeviceDesc% = QportInstall00, USB\VID_12D1&PID_1C0D&MI_03
+%DIAGDeviceDesc% = QportInstall00, USB\VID_12D1&PID_1C0E&MI_02
+%PCUIDeviceDesc% = QportInstall00, USB\VID_12D1&PID_1C0E&MI_03
+%DIAGDeviceDesc% = QportInstall00, USB\VID_12D1&PID_1C0F&MI_02
+%PCUIDeviceDesc% = QportInstall00, USB\VID_12D1&PID_1C0F&MI_03
+%ControlDeviceDesc% = QportInstall00, USB\VID_12D1&PID_1C0F&MI_05
+%DIAGDeviceDesc% = QportInstall00, USB\VID_12D1&PID_1C10&MI_01
+%PCUIDeviceDesc% = QportInstall00, USB\VID_12D1&PID_1C10&MI_02
+%DIAGDeviceDesc% = QportInstall00, USB\VID_12D1&PID_1C11&MI_01
+%PCUIDeviceDesc% = QportInstall00, USB\VID_12D1&PID_1C11&MI_02
+%ControlDeviceDesc% = QportInstall00, USB\VID_12D1&PID_1C11&MI_04
+%DIAGDeviceDesc% = QportInstall00, USB\VID_12D1&PID_1C12&MI_01
+%PCUIDeviceDesc% = QportInstall00, USB\VID_12D1&PID_1C12&MI_02
+%DIAGDeviceDesc% = QportInstall00, USB\VID_12D1&PID_1C13&MI_01
+%PCUIDeviceDesc% = QportInstall00, USB\VID_12D1&PID_1C13&MI_02
+%ControlDeviceDesc% = QportInstall00, USB\VID_12D1&PID_1C13&MI_04
+%DIAGDeviceDesc% = QportInstall00, USB\VID_12D1&PID_1C14&MI_02
+%PCUIDeviceDesc% = QportInstall00, USB\VID_12D1&PID_1C14&MI_03
+%DIAGDeviceDesc% = QportInstall00, USB\VID_12D1&PID_1C15&MI_02
+%PCUIDeviceDesc% = QportInstall00, USB\VID_12D1&PID_1C15&MI_03
+%ControlDeviceDesc% = QportInstall00, USB\VID_12D1&PID_1C15&MI_05
+%DIAGDeviceDesc% = QportInstall00, USB\VID_12D1&PID_1C16&MI_02
+%PCUIDeviceDesc% = QportInstall00, USB\VID_12D1&PID_1C16&MI_03
+%ControlDeviceDesc% = QportInstall00, USB\VID_12D1&PID_1C16&MI_05
+%BTDeviceDesc% = QportInstall00, USB\VID_12D1&PID_1C16&MI_08
+%TDPCUIDeviceDesc% = QportInstall00, USB\VID_12D1&PID_1C17&MI_01
+%TDDIAGDeviceDesc% = QportInstall00, USB\VID_12D1&PID_1C18&MI_01
+%TDPCUIDeviceDesc% = QportInstall00, USB\VID_12D1&PID_1C18&MI_02
+%TDPCUIDeviceDesc% = QportInstall00, USB\VID_12D1&PID_1C19&MI_02
+%TDDIAGDeviceDesc% = QportInstall00, USB\VID_12D1&PID_1C1A&MI_02
+%TDPCUIDeviceDesc% = QportInstall00, USB\VID_12D1&PID_1C1A&MI_03
+
+%DIAGDeviceDesc% = QportInstall00, USB\VID_12D1&PID_1C1D&MI_02
+%PCUIDeviceDesc% = QportInstall00, USB\VID_12D1&PID_1C1D&MI_03
+%BTDeviceDesc%   = QportInstall00, USB\VID_12D1&PID_1C1D&MI_06
+
+%DIAGDeviceDesc% = QportInstall00, USB\VID_12D1&PID_1C1E&MI_00
+%PCUIDeviceDesc% = QportInstall00, USB\VID_12D1&PID_1C1E&MI_02
+%BTDeviceDesc% 	 = QportInstall00, USB\VID_12D1&PID_1C1E&MI_05
+
+%PCUIDeviceDesc% = QportInstall00, USB\VID_12D1&PID_1C1F&MI_00
+%BTDeviceDesc%   = QportInstall00, USB\VID_12D1&PID_1C1F&MI_04
+
+%DIAGDeviceDesc% = QportInstall00, USB\VID_12D1&PID_1C21&MI_00
+%PCUIDeviceDesc% = QportInstall00, USB\VID_12D1&PID_1C21&MI_02
+%BTDeviceDesc% 	 = QportInstall00, USB\VID_12D1&PID_1C21&MI_04
+
+%PCUIDeviceDesc% = QportInstall00, USB\VID_12D1&PID_1C22&MI_00
+%BTDeviceDesc%   = QportInstall00, USB\VID_12D1&PID_1C22&MI_03
+
+; ==================Icera Generic PIDs==================
+%PCUIDeviceDesc% = QportInstall00, USB\VID_12D1&PID_1444&MI_00
+%PCUIDeviceDesc% = QportInstall00, USB\VID_12D1&PID_1445&MI_00
+%DIAGDeviceDesc% = QportInstall00, USB\VID_12D1&PID_1445&MI_03
+%PCUIDeviceDesc% = QportInstall00, USB\VID_12D1&PID_144E&MI_00
+%PCVoiceDeviceDesc% = QportInstall00, USB\VID_12D1&PID_144E&MI_03
+%PCUIDeviceDesc% = QportInstall00, USB\VID_12D1&PID_144F&MI_00
+%PCUIDeviceDesc% = QportInstall00, USB\VID_12D1&PID_1c1c&MI_00
+%DIAGDeviceDesc% = QportInstall00, USB\VID_12D1&PID_1c1c&MI_03
+%PCVoiceDeviceDesc% = QportInstall00, USB\VID_12D1&PID_1c1c&MI_02
+
+; ==================Icera VDF PIDs==================
+%VDFPcuiDesc% = QportInstall00, USB\VID_12D1&PID_14AE&MI_00
+%VDFPcuiDesc% = QportInstall00, USB\VID_12D1&PID_14AF&MI_00
+%VDFDiagDesc% = QportInstall00, USB\VID_12D1&PID_14AF&MI_03
+%VDFPcuiDesc% = QportInstall00, USB\VID_12D1&PID_14B0&MI_00
+%VDFPCVoiceDesc% = QportInstall00, USB\VID_12D1&PID_14B0&MI_03
+%VDFPcuiDesc% = QportInstall00, USB\VID_12D1&PID_14B1&MI_00
+; DisplayName=Section,DeviceId1,...,DeviceIdN
+
+; ==================Balong VDF PIDs==================
+%VDFDiagDesc% = QportInstall00, USB\VID_12D1&PID_14A5&MI_02
+%VDFPcuiDesc% = QportInstall00, USB\VID_12D1&PID_14A5&MI_03
+
+%VDFDiagDesc% = QportInstall00, USB\VID_12D1&PID_14A6&MI_02
+%VDFPcuiDesc% = QportInstall00, USB\VID_12D1&PID_14A6&MI_03
+
+%VDFDiagDesc% = QportInstall00, USB\VID_12D1&PID_14A7&MI_02
+%VDFPcuiDesc% = QportInstall00, USB\VID_12D1&PID_14A7&MI_03
+
+%VDFPcuiDesc% = QportInstall00, USB\VID_12D1&PID_14D6&MI_00
+%VDFDiagDesc% = QportInstall00, USB\VID_12D1&PID_14D6&MI_04
+%VDFBTDesc% = QportInstall00, USB\VID_12D1&PID_14D6&MI_03
+
+;For E173s TME
+%PCUIDeviceDesc% = QportInstall00, USB\VID_12D1&PID_1C23&MI_00
+%DIAGDeviceDesc% = QportInstall00, USB\VID_12D1&PID_1C23&MI_01
+
+;For device update, no huawei
+%NewPCUIDeviceDesc% = QportInstall00, USB\VID_12D1&PID_155C&MI_00
+%NewDIAGDeviceDesc% = QportInstall00, USB\VID_12D1&PID_155C&MI_01
+
+; Windows XP and later
+[QcomSerialPort.NTx86]
+%DIAGDeviceDesc% = QportInstall00, USB\Class_ff&Subclass_02&Prot_03
+%PCUIDeviceDesc% = QportInstall00, USB\Class_ff&Subclass_02&Prot_02
+%GPSDeviceDesc% = QportInstall00, USB\Class_ff&Subclass_02&Prot_05
+%ControlDeviceDesc% = QportInstall00, USB\Class_ff&Subclass_02&Prot_06	
+%BTDeviceDesc%   = QportInstall00, USB\Class_ff&Subclass_02&Prot_0A
+%FingerPintDesc% = QportInstall00, USB\Class_ff&Subclass_02&Prot_0B
+%PCVoiceDeviceDesc% = QportInstall00, USB\Class_ff&Subclass_02&Prot_0E
+%3GPCUIDeviceDesc% = QportInstall00, USB\Class_ff&Subclass_02&Prot_12
+%3GDIAGDeviceDesc% = QportInstall00, USB\Class_ff&Subclass_02&Prot_13
+%3GGPSDeviceDesc% = QportInstall00, USB\Class_ff&Subclass_02&Prot_14
+%3GPCVoiceDeviceDesc% = QportInstall00, USB\Class_ff&Subclass_02&Prot_15
+
+%HWShellADeviceDesc% = QportInstall00, USB\Class_ff&Subclass_02&Prot_18
+%HWShellBDeviceDesc% = QportInstall00, USB\Class_ff&Subclass_02&Prot_19
+%HWSerialADeviceDesc% = QportInstall00, USB\Class_ff&Subclass_02&Prot_1A
+%HWSerialBDeviceDesc% = QportInstall00, USB\Class_ff&Subclass_02&Prot_1B
+%HWSerialCDeviceDesc% = QportInstall00, USB\Class_ff&Subclass_02&Prot_1C
+
+%VDFDiagDesc% = QportInstall00, USB\Class_ff&Subclass_02&Prot_33
+%VDFPcuiDesc% = QportInstall00, USB\Class_ff&Subclass_02&Prot_32
+%VDFGPSDesc% = QportInstall00, USB\Class_ff&Subclass_02&Prot_35
+%VDFCtrlDesc% = QportInstall00, USB\Class_ff&Subclass_02&Prot_36 
+%VDFBTDesc% = QportInstall00, USB\Class_ff&Subclass_02&Prot_3A
+%VDFFingerPrint% = QportInstall00, USB\Class_ff&Subclass_02&Prot_3B
+%VDFPCVoiceDesc% = QportInstall00, USB\Class_ff&Subclass_02&Prot_3E
+
+%VDFShellADeviceDesc% = QportInstall00, USB\Class_ff&Subclass_02&Prot_48
+%VDFShellBDeviceDesc% = QportInstall00, USB\Class_ff&Subclass_02&Prot_49
+%VDFSerialADeviceDesc% = QportInstall00, USB\Class_ff&Subclass_02&Prot_4A
+%VDFSerialBDeviceDesc% = QportInstall00, USB\Class_ff&Subclass_02&Prot_4B
+%VDFSerialCDeviceDesc% = QportInstall00, USB\Class_ff&Subclass_02&Prot_4C
+
+%New3GPCUIDeviceDesc% = QportInstall00, USB\Class_ff&Subclass_02&Prot_62
+%New3GDIAGDeviceDesc% = QportInstall00, USB\Class_ff&Subclass_02&Prot_63
+%New3GGPSDeviceDesc% = QportInstall00, USB\Class_ff&Subclass_02&Prot_65
+%New3GPCVoiceDeviceDesc% = QportInstall00, USB\Class_ff&Subclass_02&Prot_6E
+%NewBTDeviceDesc%   = QportInstall00, USB\Class_ff&Subclass_02&Prot_6A
+%NewFingerPintDesc% = QportInstall00, USB\Class_ff&Subclass_02&Prot_6B
+%NewControlDeviceDesc% = QportInstall00, USB\Class_ff&Subclass_02&Prot_66
+
+
+%ShellADeviceDesc% = QportInstall00, USB\Class_ff&Subclass_02&Prot_78
+%ShellBDeviceDesc% = QportInstall00, USB\Class_ff&Subclass_02&Prot_79
+%SerialADeviceDesc% = QportInstall00, USB\Class_ff&Subclass_02&Prot_7A
+%SerialBDeviceDesc% = QportInstall00, USB\Class_ff&Subclass_02&Prot_7B
+%SerialCDeviceDesc% = QportInstall00, USB\Class_ff&Subclass_02&Prot_7C
+
+%DIAGDeviceDesc% = QportInstall00, USB\VID_12D1&Subclass_02&Prot_03
+%PCUIDeviceDesc% = QportInstall00, USB\VID_12D1&Subclass_02&Prot_02
+%GPSDeviceDesc% = QportInstall00, USB\VID_12D1&Subclass_02&Prot_05
+%ControlDeviceDesc% = QportInstall00, USB\VID_12D1&Subclass_02&Prot_06	
+%BTDeviceDesc%   = QportInstall00, USB\VID_12D1&Subclass_02&Prot_0A
+%FingerPintDesc% = QportInstall00, USB\VID_12D1&Subclass_02&Prot_0B
+%PCVoiceDeviceDesc% = QportInstall00, USB\VID_12D1&Subclass_02&Prot_0E
+%3GPCUIDeviceDesc% = QportInstall00, USB\VID_12D1&Subclass_02&Prot_12
+%3GDIAGDeviceDesc% = QportInstall00, USB\VID_12D1&Subclass_02&Prot_13
+%3GGPSDeviceDesc% = QportInstall00, USB\VID_12D1&Subclass_02&Prot_14
+%3GPCVoiceDeviceDesc% = QportInstall00, USB\VID_12D1&Subclass_02&Prot_15
+
+%HWShellADeviceDesc% = QportInstall00, USB\VID_12D1&Subclass_02&Prot_18
+%HWShellBDeviceDesc% = QportInstall00, USB\VID_12D1&Subclass_02&Prot_19
+%HWSerialADeviceDesc% = QportInstall00, USB\VID_12D1&Subclass_02&Prot_1A
+%HWSerialBDeviceDesc% = QportInstall00, USB\VID_12D1&Subclass_02&Prot_1B
+%HWSerialCDeviceDesc% = QportInstall00, USB\VID_12D1&Subclass_02&Prot_1C
+
+%VDFDiagDesc% = QportInstall00, USB\VID_12D1&Subclass_02&Prot_33
+%VDFPcuiDesc% = QportInstall00, USB\VID_12D1&Subclass_02&Prot_32
+%VDFGPSDesc% = QportInstall00, USB\VID_12D1&Subclass_02&Prot_35
+%VDFCtrlDesc% = QportInstall00, USB\VID_12D1&Subclass_02&Prot_36 
+%VDFBTDesc% = QportInstall00, USB\VID_12D1&Subclass_02&Prot_3A
+%VDFFingerPrint% = QportInstall00, USB\VID_12D1&Subclass_02&Prot_3B
+%VDFPCVoiceDesc% = QportInstall00, USB\VID_12D1&Subclass_02&Prot_3E
+
+%VDFShellADeviceDesc% = QportInstall00, USB\VID_12D1&Subclass_02&Prot_48
+%VDFShellBDeviceDesc% = QportInstall00, USB\VID_12D1&Subclass_02&Prot_49
+%VDFSerialADeviceDesc% = QportInstall00, USB\VID_12D1&Subclass_02&Prot_4A
+%VDFSerialBDeviceDesc% = QportInstall00, USB\VID_12D1&Subclass_02&Prot_4B
+%VDFSerialCDeviceDesc% = QportInstall00, USB\VID_12D1&Subclass_02&Prot_4C
+
+%New3GPCUIDeviceDesc% = QportInstall00, USB\VID_12D1&Subclass_02&Prot_62
+%New3GDIAGDeviceDesc% = QportInstall00, USB\VID_12D1&Subclass_02&Prot_63
+%New3GGPSDeviceDesc% = QportInstall00, USB\VID_12D1&Subclass_02&Prot_65
+%New3GPCVoiceDeviceDesc% = QportInstall00, USB\VID_12D1&Subclass_02&Prot_6E
+%NewBTDeviceDesc%   = QportInstall00, USB\VID_12D1&Subclass_02&Prot_6A
+%NewFingerPintDesc% = QportInstall00, USB\VID_12D1&Subclass_02&Prot_6B
+%NewControlDeviceDesc% = QportInstall00, USB\VID_12D1&Subclass_02&Prot_66
+
+
+
+%ShellADeviceDesc% = QportInstall00, USB\VID_12D1&Subclass_02&Prot_78
+%ShellBDeviceDesc% = QportInstall00, USB\VID_12D1&Subclass_02&Prot_79
+%SerialADeviceDesc% = QportInstall00, USB\VID_12D1&Subclass_02&Prot_7A
+%SerialBDeviceDesc% = QportInstall00, USB\VID_12D1&Subclass_02&Prot_7B
+%SerialCDeviceDesc% = QportInstall00, USB\VID_12D1&Subclass_02&Prot_7C
+
+%DIAGDeviceDesc% = QportInstall00, USB\VID_12D1&PID_1C05&MI_01
+%PCUIDeviceDesc% = QportInstall00, USB\VID_12D1&PID_1C05&MI_02
+%DIAGDeviceDesc% = QportInstall00, USB\VID_12D1&PID_1C06&MI_00
+%PCUIDeviceDesc% = QportInstall00, USB\VID_12D1&PID_1C06&MI_02
+%DIAGDeviceDesc% = QportInstall00, USB\VID_12D1&PID_1C07&MI_02
+%PCUIDeviceDesc% = QportInstall00, USB\VID_12D1&PID_1C07&MI_03
+%BTDeviceDesc%   = QportInstall00, USB\VID_12D1&PID_1C07&MI_06
+%PCUIDeviceDesc% = QportInstall00, USB\VID_12D1&PID_1C08&MI_01
+%PCUIDeviceDesc% = QportInstall00, USB\VID_12D1&PID_1C09&MI_00
+%DIAGDeviceDesc% = QportInstall00, USB\VID_12D1&PID_1C09&MI_02
+%PCUIDeviceDesc% = QportInstall00, USB\VID_12D1&PID_1C0A&MI_00
+%DIAGDeviceDesc% = QportInstall00, USB\VID_12D1&PID_1C0C&MI_02
+%PCUIDeviceDesc% = QportInstall00, USB\VID_12D1&PID_1C0C&MI_03
+%ControlDeviceDesc% = QportInstall00, USB\VID_12D1&PID_1C0C&MI_04
+%DIAGDeviceDesc% = QportInstall00, USB\VID_12D1&PID_1C0D&MI_01
+%PCUIDeviceDesc% = QportInstall00, USB\VID_12D1&PID_1C0D&MI_02
+%ControlDeviceDesc% = QportInstall00, USB\VID_12D1&PID_1C0D&MI_03
+%DIAGDeviceDesc% = QportInstall00, USB\VID_12D1&PID_1C0E&MI_02
+%PCUIDeviceDesc% = QportInstall00, USB\VID_12D1&PID_1C0E&MI_03
+%DIAGDeviceDesc% = QportInstall00, USB\VID_12D1&PID_1C0F&MI_02
+%PCUIDeviceDesc% = QportInstall00, USB\VID_12D1&PID_1C0F&MI_03
+%ControlDeviceDesc% = QportInstall00, USB\VID_12D1&PID_1C0F&MI_05
+%DIAGDeviceDesc% = QportInstall00, USB\VID_12D1&PID_1C10&MI_01
+%PCUIDeviceDesc% = QportInstall00, USB\VID_12D1&PID_1C10&MI_02
+%DIAGDeviceDesc% = QportInstall00, USB\VID_12D1&PID_1C11&MI_01
+%PCUIDeviceDesc% = QportInstall00, USB\VID_12D1&PID_1C11&MI_02
+%ControlDeviceDesc% = QportInstall00, USB\VID_12D1&PID_1C11&MI_04
+%DIAGDeviceDesc% = QportInstall00, USB\VID_12D1&PID_1C12&MI_01
+%PCUIDeviceDesc% = QportInstall00, USB\VID_12D1&PID_1C12&MI_02
+%DIAGDeviceDesc% = QportInstall00, USB\VID_12D1&PID_1C13&MI_01
+%PCUIDeviceDesc% = QportInstall00, USB\VID_12D1&PID_1C13&MI_02
+%ControlDeviceDesc% = QportInstall00, USB\VID_12D1&PID_1C13&MI_04
+%DIAGDeviceDesc% = QportInstall00, USB\VID_12D1&PID_1C14&MI_02
+%PCUIDeviceDesc% = QportInstall00, USB\VID_12D1&PID_1C14&MI_03
+%DIAGDeviceDesc% = QportInstall00, USB\VID_12D1&PID_1C15&MI_02
+%PCUIDeviceDesc% = QportInstall00, USB\VID_12D1&PID_1C15&MI_03
+%ControlDeviceDesc% = QportInstall00, USB\VID_12D1&PID_1C15&MI_05
+%DIAGDeviceDesc% = QportInstall00, USB\VID_12D1&PID_1C16&MI_02
+%PCUIDeviceDesc% = QportInstall00, USB\VID_12D1&PID_1C16&MI_03
+%ControlDeviceDesc% = QportInstall00, USB\VID_12D1&PID_1C16&MI_05
+%BTDeviceDesc% = QportInstall00, USB\VID_12D1&PID_1C16&MI_08
+%TDPCUIDeviceDesc% = QportInstall00, USB\VID_12D1&PID_1C17&MI_01
+%TDDIAGDeviceDesc% = QportInstall00, USB\VID_12D1&PID_1C18&MI_01
+%TDPCUIDeviceDesc% = QportInstall00, USB\VID_12D1&PID_1C18&MI_02
+%TDPCUIDeviceDesc% = QportInstall00, USB\VID_12D1&PID_1C19&MI_02
+%TDDIAGDeviceDesc% = QportInstall00, USB\VID_12D1&PID_1C1A&MI_02
+%TDPCUIDeviceDesc% = QportInstall00, USB\VID_12D1&PID_1C1A&MI_03
+
+%DIAGDeviceDesc% = QportInstall00, USB\VID_12D1&PID_1C1D&MI_02
+%PCUIDeviceDesc% = QportInstall00, USB\VID_12D1&PID_1C1D&MI_03
+%BTDeviceDesc%   = QportInstall00, USB\VID_12D1&PID_1C1D&MI_06
+
+%DIAGDeviceDesc% = QportInstall00, USB\VID_12D1&PID_1C1E&MI_00
+%PCUIDeviceDesc% = QportInstall00, USB\VID_12D1&PID_1C1E&MI_02
+%BTDeviceDesc% 	 = QportInstall00, USB\VID_12D1&PID_1C1E&MI_05
+
+%PCUIDeviceDesc% = QportInstall00, USB\VID_12D1&PID_1C1F&MI_00
+%BTDeviceDesc%   = QportInstall00, USB\VID_12D1&PID_1C1F&MI_04
+
+%DIAGDeviceDesc% = QportInstall00, USB\VID_12D1&PID_1C21&MI_00
+%PCUIDeviceDesc% = QportInstall00, USB\VID_12D1&PID_1C21&MI_02
+%BTDeviceDesc% 	 = QportInstall00, USB\VID_12D1&PID_1C21&MI_04
+
+%PCUIDeviceDesc% = QportInstall00, USB\VID_12D1&PID_1C22&MI_00
+%BTDeviceDesc%   = QportInstall00, USB\VID_12D1&PID_1C22&MI_03
+
+; ==================Icera Generic PIDs==================
+%PCUIDeviceDesc% = QportInstall00, USB\VID_12D1&PID_1444&MI_00
+%PCUIDeviceDesc% = QportInstall00, USB\VID_12D1&PID_1445&MI_00
+%DIAGDeviceDesc% = QportInstall00, USB\VID_12D1&PID_1445&MI_03
+%PCUIDeviceDesc% = QportInstall00, USB\VID_12D1&PID_144E&MI_00
+%PCVoiceDeviceDesc% = QportInstall00, USB\VID_12D1&PID_144E&MI_03
+%PCUIDeviceDesc% = QportInstall00, USB\VID_12D1&PID_144F&MI_00
+%PCUIDeviceDesc% = QportInstall00, USB\VID_12D1&PID_1c1c&MI_00
+%DIAGDeviceDesc% = QportInstall00, USB\VID_12D1&PID_1c1c&MI_03
+%PCVoiceDeviceDesc% = QportInstall00, USB\VID_12D1&PID_1c1c&MI_02
+
+; ==================Icera VDF PIDs==================
+%VDFPcuiDesc% = QportInstall00, USB\VID_12D1&PID_14AE&MI_00
+%VDFPcuiDesc% = QportInstall00, USB\VID_12D1&PID_14AF&MI_00
+%VDFDiagDesc% = QportInstall00, USB\VID_12D1&PID_14AF&MI_03
+%VDFPcuiDesc% = QportInstall00, USB\VID_12D1&PID_14B0&MI_00
+%VDFPCVoiceDesc% = QportInstall00, USB\VID_12D1&PID_14B0&MI_03
+%VDFPcuiDesc% = QportInstall00, USB\VID_12D1&PID_14B1&MI_00
+; DisplayName=Section,DeviceId1,...,DeviceIdN
+
+; ==================Balong VDF PIDs==================
+%VDFDiagDesc% = QportInstall00, USB\VID_12D1&PID_14A5&MI_02
+%VDFPcuiDesc% = QportInstall00, USB\VID_12D1&PID_14A5&MI_03
+
+%VDFDiagDesc% = QportInstall00, USB\VID_12D1&PID_14A6&MI_02
+%VDFPcuiDesc% = QportInstall00, USB\VID_12D1&PID_14A6&MI_03
+
+%VDFDiagDesc% = QportInstall00, USB\VID_12D1&PID_14A7&MI_02
+%VDFPcuiDesc% = QportInstall00, USB\VID_12D1&PID_14A7&MI_03
+
+%VDFPcuiDesc% = QportInstall00, USB\VID_12D1&PID_14D6&MI_00
+%VDFDiagDesc% = QportInstall00, USB\VID_12D1&PID_14D6&MI_04
+%VDFBTDesc% = QportInstall00, USB\VID_12D1&PID_14D6&MI_03
+
+;For E173s TME
+%PCUIDeviceDesc% = QportInstall00, USB\VID_12D1&PID_1C23&MI_00
+%DIAGDeviceDesc% = QportInstall00, USB\VID_12D1&PID_1C23&MI_01
+
+;For device update, no huawei
+%NewPCUIDeviceDesc% = QportInstall00, USB\VID_12D1&PID_155C&MI_00
+%NewDIAGDeviceDesc% = QportInstall00, USB\VID_12D1&PID_155C&MI_01
+
+[QcomSerialPort.NTamd64]
+
+%DIAGDeviceDesc% = QportInstall00, USB\Class_ff&Subclass_02&Prot_03
+%PCUIDeviceDesc% = QportInstall00, USB\Class_ff&Subclass_02&Prot_02
+%GPSDeviceDesc% = QportInstall00, USB\Class_ff&Subclass_02&Prot_05
+%ControlDeviceDesc% = QportInstall00, USB\Class_ff&Subclass_02&Prot_06	
+%BTDeviceDesc%   = QportInstall00, USB\Class_ff&Subclass_02&Prot_0A
+%FingerPintDesc% = QportInstall00, USB\Class_ff&Subclass_02&Prot_0B
+%PCVoiceDeviceDesc% = QportInstall00, USB\Class_ff&Subclass_02&Prot_0E
+%3GPCUIDeviceDesc% = QportInstall00, USB\Class_ff&Subclass_02&Prot_12
+%3GDIAGDeviceDesc% = QportInstall00, USB\Class_ff&Subclass_02&Prot_13
+%3GGPSDeviceDesc% = QportInstall00, USB\Class_ff&Subclass_02&Prot_14
+%3GPCVoiceDeviceDesc% = QportInstall00, USB\Class_ff&Subclass_02&Prot_15
+
+%HWShellADeviceDesc% = QportInstall00, USB\Class_ff&Subclass_02&Prot_18
+%HWShellBDeviceDesc% = QportInstall00, USB\Class_ff&Subclass_02&Prot_19
+%HWSerialADeviceDesc% = QportInstall00, USB\Class_ff&Subclass_02&Prot_1A
+%HWSerialBDeviceDesc% = QportInstall00, USB\Class_ff&Subclass_02&Prot_1B
+%HWSerialCDeviceDesc% = QportInstall00, USB\Class_ff&Subclass_02&Prot_1C
+
+%VDFDiagDesc% = QportInstall00, USB\Class_ff&Subclass_02&Prot_33
+%VDFPcuiDesc% = QportInstall00, USB\Class_ff&Subclass_02&Prot_32
+%VDFGPSDesc% = QportInstall00, USB\Class_ff&Subclass_02&Prot_35
+%VDFCtrlDesc% = QportInstall00, USB\Class_ff&Subclass_02&Prot_36 
+%VDFBTDesc% = QportInstall00, USB\Class_ff&Subclass_02&Prot_3A
+%VDFFingerPrint% = QportInstall00, USB\Class_ff&Subclass_02&Prot_3B
+%VDFPCVoiceDesc% = QportInstall00, USB\Class_ff&Subclass_02&Prot_3E
+
+%VDFShellADeviceDesc% = QportInstall00, USB\Class_ff&Subclass_02&Prot_48
+%VDFShellBDeviceDesc% = QportInstall00, USB\Class_ff&Subclass_02&Prot_49
+%VDFSerialADeviceDesc% = QportInstall00, USB\Class_ff&Subclass_02&Prot_4A
+%VDFSerialBDeviceDesc% = QportInstall00, USB\Class_ff&Subclass_02&Prot_4B
+%VDFSerialCDeviceDesc% = QportInstall00, USB\Class_ff&Subclass_02&Prot_4C
+
+%New3GPCUIDeviceDesc% = QportInstall00, USB\Class_ff&Subclass_02&Prot_62
+%New3GDIAGDeviceDesc% = QportInstall00, USB\Class_ff&Subclass_02&Prot_63
+%New3GGPSDeviceDesc% = QportInstall00, USB\Class_ff&Subclass_02&Prot_65
+%New3GPCVoiceDeviceDesc% = QportInstall00, USB\Class_ff&Subclass_02&Prot_6E
+%NewBTDeviceDesc%   = QportInstall00, USB\Class_ff&Subclass_02&Prot_6A
+%NewFingerPintDesc% = QportInstall00, USB\Class_ff&Subclass_02&Prot_6B
+%NewControlDeviceDesc% = QportInstall00, USB\Class_ff&Subclass_02&Prot_66
+
+
+%ShellADeviceDesc% = QportInstall00, USB\Class_ff&Subclass_02&Prot_78
+%ShellBDeviceDesc% = QportInstall00, USB\Class_ff&Subclass_02&Prot_79
+%SerialADeviceDesc% = QportInstall00, USB\Class_ff&Subclass_02&Prot_7A
+%SerialBDeviceDesc% = QportInstall00, USB\Class_ff&Subclass_02&Prot_7B
+%SerialCDeviceDesc% = QportInstall00, USB\Class_ff&Subclass_02&Prot_7C
+
+%DIAGDeviceDesc% = QportInstall00, USB\VID_12D1&Subclass_02&Prot_03
+%PCUIDeviceDesc% = QportInstall00, USB\VID_12D1&Subclass_02&Prot_02
+%GPSDeviceDesc% = QportInstall00, USB\VID_12D1&Subclass_02&Prot_05
+%ControlDeviceDesc% = QportInstall00, USB\VID_12D1&Subclass_02&Prot_06	
+%BTDeviceDesc%   = QportInstall00, USB\VID_12D1&Subclass_02&Prot_0A
+%FingerPintDesc% = QportInstall00, USB\VID_12D1&Subclass_02&Prot_0B
+%PCVoiceDeviceDesc% = QportInstall00, USB\VID_12D1&Subclass_02&Prot_0E
+%3GPCUIDeviceDesc% = QportInstall00, USB\VID_12D1&Subclass_02&Prot_12
+%3GDIAGDeviceDesc% = QportInstall00, USB\VID_12D1&Subclass_02&Prot_13
+%3GGPSDeviceDesc% = QportInstall00, USB\VID_12D1&Subclass_02&Prot_14
+%3GPCVoiceDeviceDesc% = QportInstall00, USB\VID_12D1&Subclass_02&Prot_15
+
+%HWShellADeviceDesc% = QportInstall00, USB\VID_12D1&Subclass_02&Prot_18
+%HWShellBDeviceDesc% = QportInstall00, USB\VID_12D1&Subclass_02&Prot_19
+%HWSerialADeviceDesc% = QportInstall00, USB\VID_12D1&Subclass_02&Prot_1A
+%HWSerialBDeviceDesc% = QportInstall00, USB\VID_12D1&Subclass_02&Prot_1B
+%HWSerialCDeviceDesc% = QportInstall00, USB\VID_12D1&Subclass_02&Prot_1C
+
+%VDFDiagDesc% = QportInstall00, USB\VID_12D1&Subclass_02&Prot_33
+%VDFPcuiDesc% = QportInstall00, USB\VID_12D1&Subclass_02&Prot_32
+%VDFGPSDesc% = QportInstall00, USB\VID_12D1&Subclass_02&Prot_35
+%VDFCtrlDesc% = QportInstall00, USB\VID_12D1&Subclass_02&Prot_36 
+%VDFBTDesc% = QportInstall00, USB\VID_12D1&Subclass_02&Prot_3A
+%VDFFingerPrint% = QportInstall00, USB\VID_12D1&Subclass_02&Prot_3B
+%VDFPCVoiceDesc% = QportInstall00, USB\VID_12D1&Subclass_02&Prot_3E
+
+%VDFShellADeviceDesc% = QportInstall00, USB\VID_12D1&Subclass_02&Prot_48
+%VDFShellBDeviceDesc% = QportInstall00, USB\VID_12D1&Subclass_02&Prot_49
+%VDFSerialADeviceDesc% = QportInstall00, USB\VID_12D1&Subclass_02&Prot_4A
+%VDFSerialBDeviceDesc% = QportInstall00, USB\VID_12D1&Subclass_02&Prot_4B
+%VDFSerialCDeviceDesc% = QportInstall00, USB\VID_12D1&Subclass_02&Prot_4C
+
+%New3GPCUIDeviceDesc% = QportInstall00, USB\VID_12D1&Subclass_02&Prot_62
+%New3GDIAGDeviceDesc% = QportInstall00, USB\VID_12D1&Subclass_02&Prot_63
+%New3GGPSDeviceDesc% = QportInstall00, USB\VID_12D1&Subclass_02&Prot_65
+%New3GPCVoiceDeviceDesc% = QportInstall00, USB\VID_12D1&Subclass_02&Prot_6E
+%NewBTDeviceDesc%   = QportInstall00, USB\VID_12D1&Subclass_02&Prot_6A
+%NewFingerPintDesc% = QportInstall00, USB\VID_12D1&Subclass_02&Prot_6B
+%NewControlDeviceDesc% = QportInstall00, USB\VID_12D1&Subclass_02&Prot_66
+
+
+%ShellADeviceDesc% = QportInstall00, USB\VID_12D1&Subclass_02&Prot_78
+%ShellBDeviceDesc% = QportInstall00, USB\VID_12D1&Subclass_02&Prot_79
+%SerialADeviceDesc% = QportInstall00, USB\VID_12D1&Subclass_02&Prot_7A
+%SerialBDeviceDesc% = QportInstall00, USB\VID_12D1&Subclass_02&Prot_7B
+%SerialCDeviceDesc% = QportInstall00, USB\VID_12D1&Subclass_02&Prot_7C
+
+%DIAGDeviceDesc% = QportInstall00, USB\VID_12D1&PID_1C05&MI_01
+%PCUIDeviceDesc% = QportInstall00, USB\VID_12D1&PID_1C05&MI_02
+%DIAGDeviceDesc% = QportInstall00, USB\VID_12D1&PID_1C06&MI_00
+%PCUIDeviceDesc% = QportInstall00, USB\VID_12D1&PID_1C06&MI_02
+%DIAGDeviceDesc% = QportInstall00, USB\VID_12D1&PID_1C07&MI_02
+%PCUIDeviceDesc% = QportInstall00, USB\VID_12D1&PID_1C07&MI_03
+%BTDeviceDesc%   = QportInstall00, USB\VID_12D1&PID_1C07&MI_06
+%PCUIDeviceDesc% = QportInstall00, USB\VID_12D1&PID_1C08&MI_01
+%PCUIDeviceDesc% = QportInstall00, USB\VID_12D1&PID_1C09&MI_00
+%DIAGDeviceDesc% = QportInstall00, USB\VID_12D1&PID_1C09&MI_02
+%PCUIDeviceDesc% = QportInstall00, USB\VID_12D1&PID_1C0A&MI_00
+%DIAGDeviceDesc% = QportInstall00, USB\VID_12D1&PID_1C0C&MI_02
+%PCUIDeviceDesc% = QportInstall00, USB\VID_12D1&PID_1C0C&MI_03
+%ControlDeviceDesc% = QportInstall00, USB\VID_12D1&PID_1C0C&MI_04
+%DIAGDeviceDesc% = QportInstall00, USB\VID_12D1&PID_1C0D&MI_01
+%PCUIDeviceDesc% = QportInstall00, USB\VID_12D1&PID_1C0D&MI_02
+%ControlDeviceDesc% = QportInstall00, USB\VID_12D1&PID_1C0D&MI_03
+%DIAGDeviceDesc% = QportInstall00, USB\VID_12D1&PID_1C0E&MI_02
+%PCUIDeviceDesc% = QportInstall00, USB\VID_12D1&PID_1C0E&MI_03
+%DIAGDeviceDesc% = QportInstall00, USB\VID_12D1&PID_1C0F&MI_02
+%PCUIDeviceDesc% = QportInstall00, USB\VID_12D1&PID_1C0F&MI_03
+%ControlDeviceDesc% = QportInstall00, USB\VID_12D1&PID_1C0F&MI_05
+%DIAGDeviceDesc% = QportInstall00, USB\VID_12D1&PID_1C10&MI_01
+%PCUIDeviceDesc% = QportInstall00, USB\VID_12D1&PID_1C10&MI_02
+%DIAGDeviceDesc% = QportInstall00, USB\VID_12D1&PID_1C11&MI_01
+%PCUIDeviceDesc% = QportInstall00, USB\VID_12D1&PID_1C11&MI_02
+%ControlDeviceDesc% = QportInstall00, USB\VID_12D1&PID_1C11&MI_04
+%DIAGDeviceDesc% = QportInstall00, USB\VID_12D1&PID_1C12&MI_01
+%PCUIDeviceDesc% = QportInstall00, USB\VID_12D1&PID_1C12&MI_02
+%DIAGDeviceDesc% = QportInstall00, USB\VID_12D1&PID_1C13&MI_01
+%PCUIDeviceDesc% = QportInstall00, USB\VID_12D1&PID_1C13&MI_02
+%ControlDeviceDesc% = QportInstall00, USB\VID_12D1&PID_1C13&MI_04
+%DIAGDeviceDesc% = QportInstall00, USB\VID_12D1&PID_1C14&MI_02
+%PCUIDeviceDesc% = QportInstall00, USB\VID_12D1&PID_1C14&MI_03
+%DIAGDeviceDesc% = QportInstall00, USB\VID_12D1&PID_1C15&MI_02
+%PCUIDeviceDesc% = QportInstall00, USB\VID_12D1&PID_1C15&MI_03
+%ControlDeviceDesc% = QportInstall00, USB\VID_12D1&PID_1C15&MI_05
+%DIAGDeviceDesc% = QportInstall00, USB\VID_12D1&PID_1C16&MI_02
+%PCUIDeviceDesc% = QportInstall00, USB\VID_12D1&PID_1C16&MI_03
+%ControlDeviceDesc% = QportInstall00, USB\VID_12D1&PID_1C16&MI_05
+%BTDeviceDesc% = QportInstall00, USB\VID_12D1&PID_1C16&MI_08
+%TDPCUIDeviceDesc% = QportInstall00, USB\VID_12D1&PID_1C17&MI_01
+%TDDIAGDeviceDesc% = QportInstall00, USB\VID_12D1&PID_1C18&MI_01
+%TDPCUIDeviceDesc% = QportInstall00, USB\VID_12D1&PID_1C18&MI_02
+%TDPCUIDeviceDesc% = QportInstall00, USB\VID_12D1&PID_1C19&MI_02
+%TDDIAGDeviceDesc% = QportInstall00, USB\VID_12D1&PID_1C1A&MI_02
+%TDPCUIDeviceDesc% = QportInstall00, USB\VID_12D1&PID_1C1A&MI_03
+
+%DIAGDeviceDesc% = QportInstall00, USB\VID_12D1&PID_1C1D&MI_02
+%PCUIDeviceDesc% = QportInstall00, USB\VID_12D1&PID_1C1D&MI_03
+%BTDeviceDesc%   = QportInstall00, USB\VID_12D1&PID_1C1D&MI_06
+
+%DIAGDeviceDesc% = QportInstall00, USB\VID_12D1&PID_1C1E&MI_00
+%PCUIDeviceDesc% = QportInstall00, USB\VID_12D1&PID_1C1E&MI_02
+%BTDeviceDesc% 	 = QportInstall00, USB\VID_12D1&PID_1C1E&MI_05
+
+%PCUIDeviceDesc% = QportInstall00, USB\VID_12D1&PID_1C1F&MI_00
+%BTDeviceDesc%   = QportInstall00, USB\VID_12D1&PID_1C1F&MI_04
+
+%DIAGDeviceDesc% = QportInstall00, USB\VID_12D1&PID_1C21&MI_00
+%PCUIDeviceDesc% = QportInstall00, USB\VID_12D1&PID_1C21&MI_02
+%BTDeviceDesc% 	 = QportInstall00, USB\VID_12D1&PID_1C21&MI_04
+
+%PCUIDeviceDesc% = QportInstall00, USB\VID_12D1&PID_1C22&MI_00
+%BTDeviceDesc%   = QportInstall00, USB\VID_12D1&PID_1C22&MI_03
+
+; ==================Icera Generic PIDs==================
+%PCUIDeviceDesc% = QportInstall00, USB\VID_12D1&PID_1444&MI_00
+%PCUIDeviceDesc% = QportInstall00, USB\VID_12D1&PID_1445&MI_00
+%DIAGDeviceDesc% = QportInstall00, USB\VID_12D1&PID_1445&MI_03
+%PCUIDeviceDesc% = QportInstall00, USB\VID_12D1&PID_144E&MI_00
+%PCVoiceDeviceDesc% = QportInstall00, USB\VID_12D1&PID_144E&MI_03
+%PCUIDeviceDesc% = QportInstall00, USB\VID_12D1&PID_144F&MI_00
+%PCUIDeviceDesc% = QportInstall00, USB\VID_12D1&PID_1c1c&MI_00
+%DIAGDeviceDesc% = QportInstall00, USB\VID_12D1&PID_1c1c&MI_03
+%PCVoiceDeviceDesc% = QportInstall00, USB\VID_12D1&PID_1c1c&MI_02
+
+; ==================Icera VDF PIDs==================
+%VDFPcuiDesc% = QportInstall00, USB\VID_12D1&PID_14AE&MI_00
+%VDFPcuiDesc% = QportInstall00, USB\VID_12D1&PID_14AF&MI_00
+%VDFDiagDesc% = QportInstall00, USB\VID_12D1&PID_14AF&MI_03
+%VDFPcuiDesc% = QportInstall00, USB\VID_12D1&PID_14B0&MI_00
+%VDFPCVoiceDesc% = QportInstall00, USB\VID_12D1&PID_14B0&MI_03
+%VDFPcuiDesc% = QportInstall00, USB\VID_12D1&PID_14B1&MI_00
+; DisplayName=Section,DeviceId1,...,DeviceIdN
+
+; ==================Balong VDF PIDs==================
+%VDFDiagDesc% = QportInstall00, USB\VID_12D1&PID_14A5&MI_02
+%VDFPcuiDesc% = QportInstall00, USB\VID_12D1&PID_14A5&MI_03
+
+%VDFDiagDesc% = QportInstall00, USB\VID_12D1&PID_14A6&MI_02
+%VDFPcuiDesc% = QportInstall00, USB\VID_12D1&PID_14A6&MI_03
+
+%VDFDiagDesc% = QportInstall00, USB\VID_12D1&PID_14A7&MI_02
+%VDFPcuiDesc% = QportInstall00, USB\VID_12D1&PID_14A7&MI_03
+
+%VDFPcuiDesc% = QportInstall00, USB\VID_12D1&PID_14D6&MI_00
+%VDFDiagDesc% = QportInstall00, USB\VID_12D1&PID_14D6&MI_04
+%VDFBTDesc% = QportInstall00, USB\VID_12D1&PID_14D6&MI_03
+
+;For E173s TME
+%PCUIDeviceDesc% = QportInstall00, USB\VID_12D1&PID_1C23&MI_00
+%DIAGDeviceDesc% = QportInstall00, USB\VID_12D1&PID_1C23&MI_01
+
+;For device update, no huawei
+%NewPCUIDeviceDesc% = QportInstall00, USB\VID_12D1&PID_155C&MI_00
+%NewDIAGDeviceDesc% = QportInstall00, USB\VID_12D1&PID_155C&MI_01
+
+[QportInstall00.NT]
+CopyFiles=QCUsbInfFiles, QCUsbDriverFiles
+AddReg = All00, AddReg
+
+[QCUsbInfFiles]
+usb.inf
+
+[QCUsbDriverFiles]
+usbser.sys
+
+[DestinationDirs]
+QCUsbInfFiles = 17
+DefaultDestDir = 12
+
+[QportInstall00.NT.Services]
+Include=usb.inf
+Needs=QC_PORT_Device.NT.Services
+
+[All00]
+HKR,,NTMPDriver,,usbser.sys
+
+[AddReg]
+HKR,,PortSubClass,1,01
+HKR,,EnumPropPages32,,"MsPorts.dll,SerialPortPropPageProvider"
+
+[Strings]
+QcomSrcDisk = "Vendor USB Driver Disk"
+QUALCOMM   = "Vendor Incorporated"
+HWShellADeviceDesc = "Vendor Mobile Broadband - ShellA"
+HWShellBDeviceDesc = "Vendor Mobile Broadband - ShellB"
+HWSerialADeviceDesc = "Vendor Mobile Broadband - SerialA"
+HWSerialBDeviceDesc = "Vendor Mobile Broadband - SerialB"
+HWSerialCDeviceDesc = "Vendor Mobile Broadband - SerialC"
+
+VDFShellADeviceDesc = "Vodafone Mobile Broadband  ShellA(Vendor)"
+VDFShellBDeviceDesc = "Vodafone Mobile Broadband  ShellB(Vendor)"
+VDFSerialADeviceDesc = "Vodafone Mobile Broadband  SerialA(Vendor)"
+VDFSerialBDeviceDesc = "Vodafone Mobile Broadband  SerialB(Vendor)"
+VDFSerialCDeviceDesc = "Vodafone Mobile Broadband  SerialC(Vendor)"
+
+ShellADeviceDesc = "Mobile Broadband - ShellA"
+ShellBDeviceDesc = "Mobile Broadband - ShellB"
+SerialADeviceDesc = "Mobile Broadband - SerialA"
+SerialBDeviceDesc = "Mobile Broadband - SerialB"
+SerialCDeviceDesc = "Mobile Broadband - SerialC"
+
+DIAGDeviceDesc = "Vendor Mobile Connect - 3G Application Interface"
+PCUIDeviceDesc = "Vendor Mobile Connect - 3G PC UI Interface"
+PCVoiceDeviceDesc = "Vendor Mobile Connect - 3G PC Voice Interface"
+GPSDeviceDesc = "Vendor Mobile Connect - 3G GPS Interface"
+
+3GDIAGDeviceDesc = "Vendor Mobile Connect - Application Interface"
+3GPCUIDeviceDesc = "Vendor Mobile Connect - PC UI Interface"
+3GPCVoiceDeviceDesc = "Vendor Mobile Connect - PC Voice Interface"
+3GGPSDeviceDesc = "Vendor Mobile Connect - GPS Interface"
+
+
+NewDIAGDeviceDesc = "Mobile Connect - 3G Application Interface"
+NewPCUIDeviceDesc = "Mobile Connect - 3G PC UI Interface"
+NewPCVoiceDeviceDesc = "Mobile Connect - 3G PC Voice Interface"
+NewGPSDeviceDesc = "Mobile Connect - 3G GPS Interface"
+New3GDIAGDeviceDesc = "Mobile Connect - Application Interface"
+New3GPCUIDeviceDesc = "Mobile Connect - PC UI Interface"
+New3GPCVoiceDeviceDesc = "Mobile Connect - PC Voice Interface"
+New3GGPSDeviceDesc = "Mobile Connect - GPS Interface"
+
+FingerPintDesc = "Vendor Mobile Connect - Fingerprint Interface"
+BTDeviceDesc = "Vendor Mobile Connect - Bluetooth Interface"
+ControlDeviceDesc = "Vendor Mobile Connect - Control Interface"
+
+NewFingerPintDesc = "Mobile Connect - Fingerprint Interface"
+NewBTDeviceDesc = "Mobile Connect - Bluetooth Interface"
+NewControlDeviceDesc = "Mobile Connect - Control Interface"
+
+TDPCUIDeviceDesc = "Vendor Mobile CMCC AT Interface"
+TDDIAGDeviceDesc = "Vendor Mobile CMCC Debug Interface"
+
+VDFDiagDesc = "Vodafone Mobile Broadband Diagnostics Port (Vendor)"
+VDFPcuiDesc = "Vodafone Mobile Broadband Secondary Port Modem (Vendor)"
+VDFBTDesc = "Vodafone Mobile Broadband Bluetooth Interface (Vendor)"
+VDFCtrlDesc = "Vodafone Mobile Broadband Control Interface (Vendor)"
+VDFPCVoiceDesc = "Vodafone Mobile Broadband 3G PC Voice Interface (Vendor)"
+VDFGPSDesc = "Vodafone Mobile Broadband NMEA Port (Vendor)"
+VDFFingerPrint = "Vodafone Mobile Broadband Fingerprint (Vendor)"

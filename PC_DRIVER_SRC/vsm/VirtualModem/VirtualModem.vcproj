@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="gb2312"?>
+<VisualStudioProject
+	ProjectType="Visual C++"
+	Version="9.00"
+	Name="VirtualModem"
+	ProjectGUID="{7A03C100-AA76-4F04-B910-E1E9AFDCB5C8}"
+	Keyword="MakeFileProj"
+	TargetFrameworkVersion="196613"
+	>
+	<Platforms>
+		<Platform
+			Name="Win32"
+		/>
+	</Platforms>
+	<ToolFiles>
+	</ToolFiles>
+	<Configurations>
+		<Configuration
+			Name="DebugWIN7|Win32"
+			OutputDirectory="C:\Users\Administrator\Desktop\PC-end\VirtualSerialAndModem\objchk_win7_x86"
+			IntermediateDirectory="C:\Users\Administrator\Desktop\PC-end\VirtualSerialAndModem\objchk_win7_x86"
+			ConfigurationType="0"
+			>
+			<Tool
+				Name="VCNMakeTool"
+				BuildCommandLine="call $(WDKPATH)\bin\setenv.bat $(WDKPATH) chk win7&#x0D;&#x0A;cd /d C:\Users\Administrator\Desktop\PC-end\VirtualSerialAndModem&#x0D;&#x0A;build -e -w -c&#x0D;&#x0A;cd /d C:\Users\Administrator\Desktop\PC-end\VirtualSerialAndModem&#x0D;&#x0A;call copy.bat"
+				ReBuildCommandLine="rmdir /s /q C:\Users\Administrator\Desktop\PC-end\VirtualSerialAndModem\objchk_win7_x86&#x0D;&#x0A;call $(WDKPATH)\bin\setenv.bat $(WDKPATH) chk win7&#x0D;&#x0A;cd /d C:\Users\Administrator\Desktop\PC-end\VirtualSerialAndModem&#x0D;&#x0A;build -e -w -c&#x0D;&#x0A;cd /d C:\Users\Administrator\Desktop\PC-end\VirtualSerialAndModem&#x0D;&#x0A;call copy.bat"
+				CleanCommandLine="rmdir /s /q C:\Users\Administrator\Desktop\PC-end\VirtualSerialAndModem\objchk_win7_x86"
+				Output="C:\Users\Administrator\Desktop\PC-end\VirtualSerialAndModem\objchk_win7_x86\i386\qcusbser.sys"
+				PreprocessorDefinitions="WIN32;_CONSOLE;_X86_;_DDK_;_DEBUG;DBG=1"
+				IncludeSearchPath="$(WDKPATH)\inc\ddk;$(WDKPATH)\inc\api;$(WDKPATH)\inc\crt"
+				ForcedIncludes=""
+				AssemblySearchPath=""
+				ForcedUsingAssemblies=""
+				CompileAsManaged=""
+			/>
+		</Configuration>
+		<Configuration
+			Name="ReleaseWIN7|Win32"
+			OutputDirectory="C:\Users\Administrator\Desktop\PC-end\VirtualSerialAndModem\objfre_win7_x86"
+			IntermediateDirectory="C:\Users\Administrator\Desktop\PC-end\VirtualSerialAndModem\objfre_win7_x86"
+			ConfigurationType="0"
+			>
+			<Tool
+				Name="VCNMakeTool"
+				BuildCommandLine="call $(WDKPATH)\bin\setenv.bat $(WDKPATH) fre win7&#x0D;&#x0A;cd /d C:\Users\Administrator\Desktop\PC-end\VirtualSerialAndModem&#x0D;&#x0A;build -e -w -c&#x0D;&#x0A;cd /d C:\Users\Administrator\Desktop\PC-end\VirtualSerialAndModem&#x0D;&#x0A;call copy.bat"
+				ReBuildCommandLine="rmdir /s /q C:\Users\Administrator\Desktop\PC-end\VirtualSerialAndModem\objfre_win7_x86&#x0D;&#x0A;call $(WDKPATH)\bin\setenv.bat $(WDKPATH) fre win7&#x0D;&#x0A;build -e -w -c&#x0D;&#x0A;cd /d C:\Users\Administrator\Desktop\PC-end\VirtualSerialAndModem&#x0D;&#x0A;call copy.bat"
+				CleanCommandLine="rmdir /s /q C:\Users\Administrator\Desktop\PC-end\VirtualSerialAndModem\objfre_win7_x86"
+				Output="C:\Users\Administrator\Desktop\PC-end\VirtualSerialAndModem\objfre_win7_x86\i386\qcusbser.sys"
+				PreprocessorDefinitions="WIN32;_CONSOLE;_X86_;_DDK_;_NDEBUG;DBG=0"
+				IncludeSearchPath="$(WDKPATH)\inc\ddk;$(WDKPATH)\inc\api;$(WDKPATH)\inc\crt"
+				ForcedIncludes=""
+				AssemblySearchPath=""
+				ForcedUsingAssemblies=""
+				CompileAsManaged=""
+			/>
+		</Configuration>
+		<Configuration
+			Name="DebugWXP|Win32"
+			OutputDirectory="C:\Users\Administrator\Desktop\PC-end\VirtualSerialAndModem\objchk_wxp_x86"
+			IntermediateDirectory="C:\Users\Administrator\Desktop\PC-end\VirtualSerialAndModem\objchk_wxp_x86"
+			ConfigurationType="0"
+			>
+			<Tool
+				Name="VCNMakeTool"
+				BuildCommandLine="call $(WDKPATH)\bin\setenv.bat $(WDKPATH) chk wxp&#x0D;&#x0A;cd /d C:\Users\Administrator\Desktop\PC-end\VirtualSerialAndModem&#x0D;&#x0A;build -e -w -c&#x0D;&#x0A;cd /d C:\Users\Administrator\Desktop\PC-end\VirtualSerialAndModem&#x0D;&#x0A;call copy.bat"
+				ReBuildCommandLine="rmdir /s /q C:\Users\Administrator\Desktop\PC-end\VirtualSerialAndModem\objchk_wxp_x86&#x0D;&#x0A;call $(WDKPATH)\bin\setenv.bat $(WDKPATH) chk wxp&#x0D;&#x0A;cd /d C:\Users\Administrator\Desktop\PC-end\VirtualSerialAndModem&#x0D;&#x0A;build -e -w -c&#x0D;&#x0A;cd /d C:\Users\Administrator\Desktop\PC-end\VirtualSerialAndModem&#x0D;&#x0A;call copy.bat"
+				CleanCommandLine="rmdir /s /q C:\Users\Administrator\Desktop\PC-end\VirtualSerialAndModem\objchk_wxp_x86"
+				Output="C:\Users\Administrator\Desktop\PC-end\VirtualSerialAndModem\objchk_wxp_x86\i386\qcusbser.sys"
+				PreprocessorDefinitions="WIN32;_CONSOLE;_X86_;_DDK_;_DEBUG;DBG=1"
+				IncludeSearchPath="$(WDKPATH)\inc\ddk;$(WDKPATH)\inc\api;$(WDKPATH)\inc\crt"
+				ForcedIncludes=""
+				AssemblySearchPath=""
+				ForcedUsingAssemblies=""
+				CompileAsManaged=""
+			/>
+		</Configuration>
+		<Configuration
+			Name="ReleaseWXP|Win32"
+			OutputDirectory="C:\Users\Administrator\Desktop\PC-end\VirtualSerialAndModem\objfre_wxp_x86"
+			IntermediateDirectory="C:\Users\Administrator\Desktop\PC-end\VirtualSerialAndModem\objfre_wxp_x86"
+			ConfigurationType="0"
+			>
+			<Tool
+				Name="VCNMakeTool"
+				BuildCommandLine="call $(WDKPATH)\bin\setenv.bat $(WDKPATH) fre wxp&#x0D;&#x0A;cd /d C:\Users\Administrator\Desktop\PC-end\VirtualSerialAndModem&#x0D;&#x0A;build -e -w -c&#x0D;&#x0A;cd /d C:\Users\Administrator\Desktop\PC-end\VirtualSerialAndModem&#x0D;&#x0A;call copy.bat"
+				ReBuildCommandLine="rmdir /s /q C:\Users\Administrator\Desktop\PC-end\VirtualSerialAndModem\objfre_wxp_x86&#x0D;&#x0A;call $(WDKPATH)\bin\setenv.bat $(WDKPATH) fre wxp&#x0D;&#x0A;cd /d C:\Users\Administrator\Desktop\PC-end\VirtualSerialAndModem&#x0D;&#x0A;build -e -w -c&#x0D;&#x0A;cd /d C:\Users\Administrator\Desktop\PC-end\VirtualSerialAndModem&#x0D;&#x0A;call copy.bat"
+				CleanCommandLine="rmdir /s /q C:\Users\Administrator\Desktop\PC-end\VirtualSerialAndModem\objfre_wxp_x86"
+				Output="C:\Users\Administrator\Desktop\PC-end\VirtualSerialAndModem\objfre_wxp_x86\i386\qcusbser.sys"
+				PreprocessorDefinitions="WIN32;_CONSOLE;_X86_;_DDK_;_NDEBUG;DBG=0"
+				IncludeSearchPath="$(WDKPATH)\inc\ddk;$(WDKPATH)\inc\api;$(WDKPATH)\inc\crt"
+				ForcedIncludes=""
+				AssemblySearchPath=""
+				ForcedUsingAssemblies=""
+				CompileAsManaged=""
+			/>
+		</Configuration>
+		<Configuration
+			Name="DebugWIN7_X64|Win32"
+			OutputDirectory="C:\Users\Administrator\Desktop\PC-end\VirtualSerialAndModem\objchk_win7_amd64"
+			IntermediateDirectory="C:\Users\Administrator\Desktop\PC-end\VirtualSerialAndModem\objchk_win7_amd64"
+			ConfigurationType="0"
+			>
+			<Tool
+				Name="VCNMakeTool"
+				BuildCommandLine="call $(WDKPATH)\bin\setenv.bat $(WDKPATH) x64 chk win7&#x0D;&#x0A;cd /d C:\Users\Administrator\Desktop\PC-end\VirtualSerialAndModem&#x0D;&#x0A;build -e -w -c&#x0D;&#x0A;cd /d C:\Users\Administrator\Desktop\PC-end\VirtualSerialAndModem&#x0D;&#x0A;call copy.bat"
+				ReBuildCommandLine="rmdir /s /q C:\Users\Administrator\Desktop\PC-end\VirtualSerialAndModem\objchk_win7_amd64&#x0D;&#x0A;call $(WDKPATH)\bin\setenv.bat $(WDKPATH) x64 chk win7&#x0D;&#x0A;cd /d C:\Users\Administrator\Desktop\PC-end\VirtualSerialAndModem&#x0D;&#x0A;build -e -w -c&#x0D;&#x0A;cd /d C:\Users\Administrator\Desktop\PC-end\VirtualSerialAndModem&#x0D;&#x0A;call copy.bat"
+				CleanCommandLine="rmdir /s /q C:\Users\Administrator\Desktop\PC-end\VirtualSerialAndModem\objchk_win7_amd64"
+				Output="C:\Users\Administrator\Desktop\PC-end\VirtualSerialAndModem\objchk_win7_amd64\amd64\qcusbser.sys"
+				PreprocessorDefinitions="WIN32;_CONSOLE;_X64_;_DDK_;_DEBUG;DBG=1"
+				IncludeSearchPath="$(WDKPATH)\inc\ddk;$(WDKPATH)\inc\api;$(WDKPATH)\inc\crt"
+				ForcedIncludes=""
+				AssemblySearchPath=""
+				ForcedUsingAssemblies=""
+				CompileAsManaged=""
+			/>
+		</Configuration>
+		<Configuration
+			Name="ReleaseWIN7_X64|Win32"
+			OutputDirectory="C:\Users\Administrator\Desktop\PC-end\VirtualSerialAndModem\objfre_win7_amd64"
+			IntermediateDirectory="C:\Users\Administrator\Desktop\PC-end\VirtualSerialAndModem\objfre_win7_amd64"
+			ConfigurationType="0"
+			>
+			<Tool
+				Name="VCNMakeTool"
+				BuildCommandLine="call $(WDKPATH)\bin\setenv.bat $(WDKPATH) x64 fre win7&#x0D;&#x0A;cd /d C:\Users\Administrator\Desktop\PC-end\VirtualSerialAndModem&#x0D;&#x0A;build -e -w -c&#x0D;&#x0A;cd /d C:\Users\Administrator\Desktop\PC-end\VirtualSerialAndModem&#x0D;&#x0A;call copy.bat"
+				ReBuildCommandLine="rmdir /s /q C:\Users\Administrator\Desktop\PC-end\VirtualSerialAndModem\objfre_win7_amd64&#x0D;&#x0A;call $(WDKPATH)\bin\setenv.bat $(WDKPATH) x64 fre win7&#x0D;&#x0A;build -e -w -c&#x0D;&#x0A;cd /d C:\Users\Administrator\Desktop\PC-end\VirtualSerialAndModem&#x0D;&#x0A;call copy.bat"
+				CleanCommandLine="rmdir /s /q C:\Users\Administrator\Desktop\PC-end\VirtualSerialAndModem\objfre_win7_amd64"
+				Output="C:\Users\Administrator\Desktop\PC-end\VirtualSerialAndModem\objfre_win7_amd64\amd64\qcusbser.sys"
+				PreprocessorDefinitions="WIN32;_CONSOLE;_X64_;_DDK_;_NDEBUG;DBG=0"
+				IncludeSearchPath="$(WDKPATH)\inc\ddk;$(WDKPATH)\inc\api;$(WDKPATH)\inc\crt"
+				ForcedIncludes=""
+				AssemblySearchPath=""
+				ForcedUsingAssemblies=""
+				CompileAsManaged=""
+			/>
+		</Configuration>
+		<Configuration
+			Name="DebugWXP_X64|Win32"
+			OutputDirectory="C:\Users\Administrator\Desktop\PC-end\VirtualSerialAndModem\objchk_wxp_amd64"
+			IntermediateDirectory="C:\Users\Administrator\Desktop\PC-end\VirtualSerialAndModem\objchk_wxp_amd64"
+			ConfigurationType="0"
+			>
+			<Tool
+				Name="VCNMakeTool"
+				BuildCommandLine="call $(WDKPATH)\bin\setenv.bat $(WDKPATH) x64 chk wxp&#x0D;&#x0A;cd /d C:\Users\Administrator\Desktop\PC-end\VirtualSerialAndModem&#x0D;&#x0A;build -e -w -c&#x0D;&#x0A;cd /d C:\Users\Administrator\Desktop\PC-end\VirtualSerialAndModem&#x0D;&#x0A;call copy.bat"
+				ReBuildCommandLine="rmdir /s /q C:\Users\Administrator\Desktop\PC-end\VirtualSerialAndModem\objchk_wxp_amd64&#x0D;&#x0A;call $(WDKPATH)\bin\setenv.bat $(WDKPATH) x64 chk wxp&#x0D;&#x0A;cd /d C:\Users\Administrator\Desktop\PC-end\VirtualSerialAndModem&#x0D;&#x0A;build -e -w -c&#x0D;&#x0A;cd /d C:\Users\Administrator\Desktop\PC-end\VirtualSerialAndModem&#x0D;&#x0A;call copy.bat"
+				CleanCommandLine="rmdir /s /q C:\Users\Administrator\Desktop\PC-end\VirtualSerialAndModem\objchk_wxp_amd64"
+				Output="C:\Users\Administrator\Desktop\PC-end\VirtualSerialAndModem\objchk_wxp_amd64\amd64\qcusbser.sys"
+				PreprocessorDefinitions="WIN32;_CONSOLE;_X64_;_DDK_;_DEBUG;DBG=1"
+				IncludeSearchPath="$(WDKPATH)\inc\ddk;$(WDKPATH)\inc\api;$(WDKPATH)\inc\crt"
+				ForcedIncludes=""
+				AssemblySearchPath=""
+				ForcedUsingAssemblies=""
+				CompileAsManaged=""
+			/>
+		</Configuration>
+		<Configuration
+			Name="ReleaseWXP_X64|Win32"
+			OutputDirectory="C:\Users\Administrator\Desktop\PC-end\VirtualSerialAndModem\objfre_wxp_amd64"
+			IntermediateDirectory="C:\Users\Administrator\Desktop\PC-end\VirtualSerialAndModem\objfre_wxp_amd64"
+			ConfigurationType="0"
+			>
+			<Tool
+				Name="VCNMakeTool"
+				BuildCommandLine="call $(WDKPATH)\bin\setenv.bat $(WDKPATH) x64 fre wxp&#x0D;&#x0A;cd /d C:\Users\Administrator\Desktop\PC-end\VirtualSerialAndModem&#x0D;&#x0A;build -e -w -c&#x0D;&#x0A;cd /d C:\Users\Administrator\Desktop\PC-end\VirtualSerialAndModem&#x0D;&#x0A;call copy.bat"
+				ReBuildCommandLine="rmdir /s /q C:\Users\Administrator\Desktop\PC-end\VirtualSerialAndModem\objfre_wxp_amd64&#x0D;&#x0A;call $(WDKPATH)\bin\setenv.bat $(WDKPATH) x64 fre wxp&#x0D;&#x0A;cd /d C:\Users\Administrator\Desktop\PC-end\VirtualSerialAndModem&#x0D;&#x0A;build -e -w -c&#x0D;&#x0A;cd /d C:\Users\Administrator\Desktop\PC-end\VirtualSerialAndModem&#x0D;&#x0A;call copy.bat"
+				CleanCommandLine="rmdir /s /q C:\Users\Administrator\Desktop\PC-end\VirtualSerialAndModem\objfre_wxp_amd64"
+				Output="C:\Users\Administrator\Desktop\PC-end\VirtualSerialAndModem\objfre_wxp_amd64\amd64\qcusbser.sys"
+				PreprocessorDefinitions="WIN32;_CONSOLE;_X64_;_DDK_;_NDEBUG;DBG=0"
+				IncludeSearchPath="$(WDKPATH)\inc\ddk;$(WDKPATH)\inc\api;$(WDKPATH)\inc\crt"
+				ForcedIncludes=""
+				AssemblySearchPath=""
+				ForcedUsingAssemblies=""
+				CompileAsManaged=""
+			/>
+		</Configuration>
+	</Configurations>
+	<References>
+	</References>
+	<Files>
+		<Filter
+			Name="Source files"
+			Filter="cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx"
+			>
+			<File
+				RelativePath="..\QCDEV.c"
+				>
+			</File>
+			<File
+				RelativePath="..\QCDSP.c"
+				>
+			</File>
+			<File
+				RelativePath="..\QCINT.c"
+				>
+			</File>
+			<File
+				RelativePath="..\QCMAIN.c"
+				>
+			</File>
+			<File
+				RelativePath="..\QCMGR.c"
+				>
+			</File>
+			<File
+				RelativePath="..\QCMRD.c"
+				>
+			</File>
+			<File
+				RelativePath="..\QCMWT.c"
+				>
+			</File>
+			<File
+				RelativePath="..\QCPNP.c"
+				>
+			</File>
+			<File
+				RelativePath="..\QCPTDO.c"
+				>
+			</File>
+			<File
+				RelativePath="..\QCPWR.c"
+				>
+			</File>
+			<File
+				RelativePath="..\QCRD.c"
+				>
+			</File>
+			<File
+				RelativePath="..\QCSER.c"
+				>
+			</File>
+			<File
+				RelativePath="..\QCUSB.c"
+				>
+			</File>
+			<File
+				RelativePath="..\QCUTILS.c"
+				>
+			</File>
+			<File
+				RelativePath="..\QCWT.c"
+				>
+			</File>
+		</Filter>
+		<Filter
+			Name="Resource files"
+			Filter="rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav"
+			>
+			<File
+				RelativePath="..\qcusbser.rc"
+				>
+			</File>
+		</Filter>
+		<Filter
+			Name="Header files"
+			Filter="h;hpp;hxx;hm;inl;inc;xsd"
+			>
+			<File
+				RelativePath="..\QCDBG.h"
+				>
+			</File>
+			<File
+				RelativePath="..\QCDEV.h"
+				>
+			</File>
+			<File
+				RelativePath="..\QCDSP.h"
+				>
+			</File>
+			<File
+				RelativePath="..\QCINT.h"
+				>
+			</File>
+			<File
+				RelativePath="..\QCMAIN.h"
+				>
+			</File>
+			<File
+				RelativePath="..\QCMGR.h"
+				>
+			</File>
+			<File
+				RelativePath="..\QCPNP.h"
+				>
+			</File>
+			<File
+				RelativePath="..\QCPTDO.h"
+				>
+			</File>
+			<File
+				RelativePath="..\QCPWR.h"
+				>
+			</File>
+			<File
+				RelativePath="..\QCRD.h"
+				>
+			</File>
+			<File
+				RelativePath="..\QCSER.h"
+				>
+			</File>
+			<File
+				RelativePath="..\QCUSB.h"
+				>
+			</File>
+			<File
+				RelativePath="..\QCUTILS.h"
+				>
+			</File>
+			<File
+				RelativePath="..\QCWT.h"
+				>
+			</File>
+		</Filter>
+		<File
+			RelativePath="..\sources"
+			>
+		</File>
+	</Files>
+	<Globals>
+	</Globals>
+</VisualStudioProject>

@@ -1,0 +1,64 @@
+;/*++
+;
+;Copyright (c) 2004-2007 Qualcomm Inc.  All rights reserved.
+;
+;Module Name:
+;
+;    QCUSB.INF
+;
+;Abstract:
+;    INF file for installing Qualcomm USB device drivers
+;
+;--*/
+
+[Version]
+Signature="$WINDOWS NT$"
+Class=MEDIA
+ClassGuid={4d36e96c-e325-11ce-bfc1-08002be10318}
+Provider=%QCOM%
+DriverVer=01/01/2007,6.0.3.8
+Catalogfile = qcusbser.cat
+
+[PreCopySection]
+HKR,,NoSetupUI,,1
+
+[Strings]
+QCOM = "Qualcomm Inc."
+QUALCOMM = "Qualcomm Incorporated"
+QCUSBSER = "Qualcomm USB Device for Legacy Serial Communication"
+
+[Manufacturer]
+%QUALCOMM%=Models
+
+[ControlFlags]
+ExcludeFromSelect = *
+
+[Models]
+
+; ===== Modem Section =====
+[QC_MDM_Device.NT.Services]
+AddService=qcusbser,  0x00000000, QC_USBSerialService
+
+[QC_MDM_Device.NTia64.Services]
+AddService=qcusbser,  0x00000000, QC_USBSerialService
+
+[QC_MDM_Device.NTamd64.Services]
+AddService=qcusbser,  0x00000000, QC_USBSerialService
+
+; ===== Port Section =====
+[QC_PORT_Device.NT.Services]
+AddService=qcusbser,  0x00000002, QC_USBSerialService
+
+[QC_PORT_Device.NTia64.Services]
+AddService=qcusbser,  0x00000002, QC_USBSerialService
+
+[QC_PORT_Device.NTamd64.Services]
+AddService=qcusbser,  0x00000002, QC_USBSerialService
+
+[QC_USBSerialService]
+DisplayName   = %QCUSBSER%
+ServiceType   = 1
+StartType     = 3
+ErrorControl  = 1
+ServiceBinary = %12%\qcusbser.sys
+

@@ -1,0 +1,96 @@
+; Windows 2000 Virtual Serial Port Setup File
+; Copyright (c) 2002-2007 Qualcomm Incorporated
+; Manufacturer: Qualcomm Incorporated
+;
+; This INF file installs a virtual COM port on Win2K system.
+
+[Version]
+signature  = "$WINDOWS NT$"
+Class      = Ports
+Provider   = %QUALCOMM%
+ClassGuid  = {4D36E978-E325-11CE-BFC1-08002BE10318}
+DriverVer  = 03/25/2004,1.0.1.0
+Catalogfile = qcusbser.cat
+
+[ControlFlags]
+ExcludeFromSelect = *
+
+[Manufacturer]
+%QUALCOMM% = QcomSerialPort
+
+[SourceDisksNames]
+  1000 = %QcomSrcDisk%,"",,
+
+[SourceDisksFiles]
+  qcusbser.sys = 1000
+
+[QcomSerialPort]
+%QcomDevice00% = QportInstall00, USB\VID_05C6&PID_3197&MI_01
+%QcomDevice6k%   = QportInstall00, USB\VID_05C6&PID_6000&MI_01
+%QcomDeviceNMEA% = QportInstall00, USB\VID_05C6&PID_6000&MI_02
+%QcomDevice7k%   = QportInstall00, USB\VID_05C6&PID_7000&MI_01
+%QcomDevice7k1%  = QportInstall00, USB\VID_05C6&PID_7001&MI_00
+%QcomDevice7k3%  = QportInstall00, USB\VID_05C6&PID_7001&MI_03
+%QcomDevice90080%  = QportInstall00, USB\VID_05C6&PID_9008
+%QcomDevice90020%  = QportInstall00, USB\VID_05C6&PID_9002&MI_00
+%QcomDevice90021%  = QportInstall00, USB\VID_05C6&PID_9002&MI_01
+%QcomDevice32001%  = QportInstall00, USB\VID_05C6&PID_3200&MI_01
+%QcomDevice32002%  = QportInstall00, USB\VID_05C6&PID_3200&MI_02
+%QcomDevice90040%  = QportInstall00, USB\VID_05C6&PID_9004&MI_00
+%QcomDevice90050%  = QportInstall00, USB\VID_05C6&PID_9005&MI_00
+%QcomDevice90120%  = QportInstall00, USB\VID_05C6&PID_9012&MI_00
+%QcomDevice90130%  = QportInstall00, USB\VID_05C6&PID_9013&MI_00
+%QcomDevice90160%  = QportInstall00, USB\VID_05C6&PID_9016&MI_00
+%QcomDevice90162%  = QportInstall00, USB\VID_05C6&PID_9016&MI_02
+%QcomDevice90170%  = QportInstall00, USB\VID_05C6&PID_9017&MI_00
+%QcomDevice90172%  = QportInstall00, USB\VID_05C6&PID_9017&MI_02
+%QcomDeviceF0051%  = QportInstall00, USB\VID_05C6&PID_F005&MI_01
+
+[QportInstall00.NT]
+CopyFiles=QCUsbInfFiles, QCUsbDriverFiles
+AddReg = All00, AddReg.NT
+
+[QCUsbInfFiles]
+qcusb.inf
+
+[QCUsbDriverFiles]
+qcusbser.sys
+
+[DestinationDirs]
+QCUsbInfFiles = 17
+DefaultDestDir = 12
+
+[QportInstall00.NT.Services]
+Include=qcusb.inf
+Needs=QC_PORT_Device.NT.Services
+
+[All00]
+HKR,,NTMPDriver,,qcusbser.sys
+
+[AddReg.NT]
+HKR,,PortSubClass,1,01
+HKR,,EnumPropPages32,,"MsPorts.dll,SerialPortPropPageProvider"
+
+[Strings]
+QcomSrcDisk = "Qualcomm USB Driver Disk"
+QUALCOMM   = "Qualcomm Incorporated"
+QcomDevice00 = "Qualcomm Diagnostics Interface 3197"
+QcomDevice6k = "Qualcomm Diagnostics Interface 6000"
+QcomDeviceNMEA = "Qualcomm NMEA Device"
+QcomDevice7k = "Qualcomm Diagnostics Interface 7000"
+QcomDevice7k1 = "Qualcomm RRDM 7001"
+QcomDevice7k3 = "Qualcomm Diagnostics Interface 7001"
+QcomDevice90080 = "Qualcomm HS-USB QDLoader 9008"
+QcomDevice90020 = "Qualcomm HS-USB Diagnostics 9002"
+QcomDevice90021 = "Qualcomm HS-USB NMEA 9002"
+QcomDevice32001 = "Qualcomm WinMobile Diagnostics 3200"
+QcomDevice32002 = "Qualcomm WinMobile NMEA 3200"
+QcomDevice90040 = "Qualcomm HS-USB Diagnostics 9004"
+QcomDevice90050 = "Qualcomm HS-USB Diagnostics 9005"
+QcomDevice90120 = "Qualcomm HS-USB Diagnostics 9012"
+QcomDevice90130 = "Qualcomm HS-USB Diagnostics 9013"
+QcomDevice90160 = "Qualcomm HS-USB Diagnostics 9016"
+QcomDevice90162 = "Qualcomm HS-USB NMEA 9016"
+QcomDevice90170 = "Qualcomm HS-USB Diagnostics 9017"
+QcomDevice90172 = "Qualcomm HS-USB NMEA 9017"
+QcomDeviceF0051 = "Qualcomm HS-USB Diagnostics F005"

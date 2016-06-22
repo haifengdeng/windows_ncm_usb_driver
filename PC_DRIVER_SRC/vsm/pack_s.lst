@@ -1,0 +1,61 @@
+PKZIP(R)  Version 4.50  FAST! Compression Utility for Windows
+Copyright 1989-2001 PKWARE Inc.  All Rights Reserved. Registered Version
+PKZIP Reg. U.S. Pat. and Tm. Off.  Patent No. 5,051,745
+
+Viewing .ZIP: USB_WIN2KXP2053s.exe
+
+  Length Method     Size  Ratio    Date     Time  Name
+  ------ ------     ----  -----    ----     ----  ----
+    267B DeflatN     226B 15.4% 07/21/2001  1:43p makefile
+   6672B DeflatN    1001B 85.0% 03/14/2007 11:00p blddrv.bat
+    25KB DeflatN    3192B 87.8% 12/02/2007  2:18p qcpl.bat
+    16KB DeflatN    3512B 79.0% 03/06/2008  4:24p QCDEV.c
+   106KB DeflatN     15KB 85.6% 01/31/2008  5:28p QCDSP.c
+    47KB DeflatN    8358B 83.0% 02/06/2008 11:53a QCINT.c
+    40KB DeflatN    7193B 82.7% 02/21/2008  4:39p QCMAIN.c
+    14KB DeflatN    2834B 81.5% 10/17/2006 11:06a QCMGR.c
+    76KB DeflatN     12KB 83.9% 01/22/2008 12:39p QCMRD.c
+    75KB DeflatN     12KB 83.5% 10/30/2007  1:35p QCMWT.c
+    78KB DeflatN     15KB 80.7% 02/06/2008 11:25a QCPNP.c
+    47KB DeflatN    8735B 82.3% 03/26/2008  4:17p QCPTDO.c
+    96KB DeflatN     14KB 85.3% 04/03/2008 12:31p QCPWR.c
+   136KB DeflatN     22KB 83.9% 03/03/2008  4:38p QCRD.c
+    87KB DeflatN     13KB 84.0% 10/07/2007  0:19a QCSER.c
+    208B DeflatN     147B 29.4% 12/01/2007  3:22p qcserwv.cdf
+    251B DeflatN     166B 33.9% 12/14/2007 12:59p qcserxp.cdf
+    51KB DeflatN    7977B 85.0% 03/19/2008  3:51p QCUSB.c
+    48KB DeflatN    9949B 79.9% 02/06/2008 11:35a QCUTILS.c
+    79KB DeflatN     13KB 82.6% 11/20/2007  5:19p QCWT.c
+    822B DeflatN     352B 57.2% 06/28/2007  1:48p SOURCESK.CHK
+    889B DeflatN     377B 57.6% 06/28/2007  1:49p SOURCESV.CHK
+    872B DeflatN     367B 58.0% 06/28/2007  1:47p SOURCESX.CHK
+    36KB DeflatN     17KB 52.4% 09/22/2005  4:30p logreader.exe
+    731B DeflatN     315B 57.0% 06/28/2007  1:49p SOURCESK.FRE
+    798B DeflatN     339B 57.6% 06/28/2007  1:49p SOURCESV.FRE
+    781B DeflatN     329B 57.9% 06/28/2007  1:48p SOURCESX.FRE
+    10KB DeflatN    2776B 75.0% 10/30/2007  1:31p QCDBG.h
+   1718B DeflatN     747B 56.6% 10/21/2007  0:15a QCDEV.h
+   1542B DeflatN     617B 60.0% 10/05/2007 11:22a QCDSP.h
+   2163B DeflatN     855B 60.5% 01/11/2006  6:02p QCINT.h
+    38KB DeflatN      9KB 74.2% 06/02/2008 10:56a QCMAIN.h
+   1579B DeflatN     655B 58.6% 10/17/2006 11:05a QCMGR.h
+   2189B DeflatN     734B 66.5% 11/19/2007  5:55p QCPNP.h
+   1166B DeflatN     524B 55.1% 08/14/2003  1:43p QCPTDO.h
+     9KB DeflatN    2117B 79.1% 01/30/2008  5:31p QCPWR.h
+   5187B DeflatN    1377B 73.5% 09/19/2007  5:16p QCRD.h
+    11KB DeflatN    2634B 76.7% 07/16/2007  0:11a QCSER.h
+   7981B DeflatN    2433B 69.6% 09/19/2007  4:51p QCUSB.h
+   2879B DeflatN    1099B 61.9% 10/05/2007 11:51a QCUTILS.h
+   5191B DeflatN    1420B 72.7% 08/01/2007  6:03p QCWT.h
+   8153B DeflatN    1899B 76.8% 05/30/2008 11:27a msmdmxp.inf
+   8574B DeflatN    2040B 76.3% 05/30/2008 11:26a qcmdm2k.inf
+    11KB DeflatN    2225B 81.5% 05/30/2008 11:26a qcmdmwv.inf
+    11KB DeflatN    2163B 81.8% 05/30/2008 11:26a qcmdmxp.inf
+   3476B DeflatN     991B 71.5% 05/28/2008  4:53p qcser2k.inf
+    11KB DeflatN    1381B 87.9% 05/28/2008  4:57p qcserwv.inf
+    11KB DeflatN    1325B 88.3% 05/28/2008  4:55p qcserxp.inf
+   1378B DeflatN     596B 56.8% 03/14/2007  6:41p qcusb.inf
+   2907B DeflatN     783B 73.1% 06/02/2008 11:40a qcusbser.rc
+   4853B DeflatN    2053B 57.7% 06/02/2008 11:45a README.txt
+  ------           ------ -----                   ----
+  1252KB            233KB 81.4%                     51

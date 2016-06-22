@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="gb2312"?>
+<VisualStudioProject
+	ProjectType="Visual C++"
+	Version="9.00"
+	Name="NdisWdm"
+	ProjectGUID="{310CCCCB-59AD-4282-AF6C-A2AED0C516C5}"
+	Keyword="MakeFileProj"
+	TargetFrameworkVersion="196613"
+	>
+	<Platforms>
+		<Platform
+			Name="Win32"
+		/>
+	</Platforms>
+	<ToolFiles>
+	</ToolFiles>
+	<Configurations>
+		<Configuration
+			Name="DebugXP|Win32"
+			OutputDirectory="C:\Users\Administrator\Desktop\PC-end\NdisWdm\objchk_wxp_x86"
+			IntermediateDirectory="C:\Users\Administrator\Desktop\PC-end\NdisWdm\objchk_wxp_x86"
+			ConfigurationType="0"
+			>
+			<Tool
+				Name="VCNMakeTool"
+				BuildCommandLine="call $(WDKPATH)\bin\setenv.bat $(WDKPATH) chk wxp&#x0D;&#x0A;cd /d C:\Users\Administrator\Desktop\PC-end\NdisWdm&#x0D;&#x0A;build&#x0D;&#x0A;cd /d C:\Users\Administrator\Desktop\PC-end\NdisWdm&#x0D;&#x0A;call copy.bat"
+				ReBuildCommandLine="rmdir /s /q C:\Users\Administrator\Desktop\PC-end\NdisWdm\objchk_wxp_x86&#x0D;&#x0A;call $(WDKPATH)\bin\setenv.bat $(WDKPATH) chk wxp&#x0D;&#x0A;cd /d C:\Users\Administrator\Desktop\PC-end\NdisWdm&#x0D;&#x0A;build&#x0D;&#x0A;cd /d C:\Users\Administrator\Desktop\PC-end\NdisWdm&#x0D;&#x0A;call copy.bat"
+				CleanCommandLine="rmdir /s /q C:\Users\Administrator\Desktop\PC-end\NdisWdm\objchk_wxp_x86"
+				Output="C:\Users\Administrator\Desktop\PC-end\NdisWdm\objchk_wxp_x86\i386\NdisWdm.sys"
+				PreprocessorDefinitions="WIN32;_CONSOLE;_X86_;_DDK_;_DEBUG;DBG=1"
+				IncludeSearchPath="$(WDKPATH)\inc\ddk;$(WDKPATH)\inc\api;$(WDKPATH)\inc\crt"
+				ForcedIncludes=""
+				AssemblySearchPath=""
+				ForcedUsingAssemblies=""
+				CompileAsManaged=""
+			/>
+		</Configuration>
+		<Configuration
+			Name="ReleaseXP|Win32"
+			OutputDirectory="C:\Users\Administrator\Desktop\PC-end\NdisWdm\objfre_wxp_x86"
+			IntermediateDirectory="C:\Users\Administrator\Desktop\PC-end\NdisWdm\objfre_wxp_x86"
+			ConfigurationType="0"
+			>
+			<Tool
+				Name="VCNMakeTool"
+				BuildCommandLine="call $(WDKPATH)\bin\setenv.bat $(WDKPATH) fre wxp&#x0D;&#x0A;cd /d C:\Users\Administrator\Desktop\PC-end\NdisWdm&#x0D;&#x0A;build&#x0D;&#x0A;cd /d C:\Users\Administrator\Desktop\PC-end\NdisWdm&#x0D;&#x0A;call copyfre.bat"
+				ReBuildCommandLine="rmdir /s /q C:\Users\Administrator\Desktop\PC-end\NdisWdm\objfre_wxp_x86&#x0D;&#x0A;call $(WDKPATH)\bin\setenv.bat $(WDKPATH) fre wxp&#x0D;&#x0A;cd /d C:\Users\Administrator\Desktop\PC-end\NdisWdm&#x0D;&#x0A;build&#x0D;&#x0A;cd /d C:\Users\Administrator\Desktop\PC-end\NdisWdm&#x0D;&#x0A;call copyfre.bat"
+				CleanCommandLine="rmdir /s /q C:\Users\Administrator\Desktop\PC-end\NdisWdm\objfre_wxp_x86"
+				Output="C:\Users\Administrator\Desktop\PC-end\NdisWdm\objfre_wxp_x86\i386\NdisWdm.sys"
+				PreprocessorDefinitions="WIN32;_CONSOLE;_X86_;_DDK_;_NDEBUG;DBG=0"
+				IncludeSearchPath="$(WDKPATH)\inc\ddk;$(WDKPATH)\inc\api;$(WDKPATH)\inc\crt"
+				ForcedIncludes=""
+				AssemblySearchPath=""
+				ForcedUsingAssemblies=""
+				CompileAsManaged=""
+			/>
+		</Configuration>
+		<Configuration
+			Name="DebugWIN7|Win32"
+			OutputDirectory="C:\Users\Administrator\Desktop\PC-end\NdisWdm\objchk_win7_x86"
+			IntermediateDirectory="C:\Users\Administrator\Desktop\PC-end\NdisWdm\objchk_win7_x86"
+			ConfigurationType="0"
+			>
+			<Tool
+				Name="VCNMakeTool"
+				BuildCommandLine="call $(WDKPATH)\bin\setenv.bat $(WDKPATH) chk win7&#x0D;&#x0A;cd /d C:\Users\Administrator\Desktop\PC-end\NdisWdm&#x0D;&#x0A;build"
+				ReBuildCommandLine="rmdir /s /q C:\Users\Administrator\Desktop\PC-end\NdisWdm\objchk_win7_x86&#x0D;&#x0A;call $(WDKPATH)\bin\setenv.bat $(WDKPATH) chk win7&#x0D;&#x0A;cd /d C:\Users\Administrator\Desktop\PC-end\NdisWdm&#x0D;&#x0A;build"
+				CleanCommandLine="rmdir /s /q C:\Users\Administrator\Desktop\PC-end\NdisWdm\objchk_win7_x86"
+				Output="C:\Users\Administrator\Desktop\PC-end\NdisWdm\objchk_win7_x86\i386\NdisWdm.sys"
+				PreprocessorDefinitions="WIN32;_CONSOLE;_X86_;_DDK_;_DEBUG;DBG=1"
+				IncludeSearchPath="$(WDKPATH)\inc\ddk;$(WDKPATH)\inc\api;$(WDKPATH)\inc\crt"
+				ForcedIncludes=""
+				AssemblySearchPath=""
+				ForcedUsingAssemblies=""
+				CompileAsManaged=""
+			/>
+		</Configuration>
+		<Configuration
+			Name="ReleaseWIN7|Win32"
+			OutputDirectory="C:\Users\Administrator\Desktop\PC-end\NdisWdm\objfre_win7_x86"
+			IntermediateDirectory="C:\Users\Administrator\Desktop\PC-end\NdisWdm\objfre_win7_x86"
+			ConfigurationType="0"
+			>
+			<Tool
+				Name="VCNMakeTool"
+				BuildCommandLine="call $(WDKPATH)\bin\setenv.bat $(WDKPATH) fre win7&#x0D;&#x0A;cd /d C:\Users\Administrator\Desktop\PC-end\NdisWdm&#x0D;&#x0A;build"
+				ReBuildCommandLine="rmdir /s /q C:\Users\Administrator\Desktop\PC-end\NdisWdm\objfre_win7_x86&#x0D;&#x0A;call $(WDKPATH)\bin\setenv.bat $(WDKPATH) fre win7&#x0D;&#x0A;cd /d C:\Users\Administrator\Desktop\PC-end\NdisWdm&#x0D;&#x0A;build"
+				CleanCommandLine="rmdir /s /q C:\Users\Administrator\Desktop\PC-end\NdisWdm\objfre_win7_x86"
+				Output="C:\Users\Administrator\Desktop\PC-end\NdisWdm\objfre_win7_x86\i386\NdisWdm.sys"
+				PreprocessorDefinitions="WIN32;_CONSOLE;_X86_;_DDK_;_NDEBUG;DBG=0"
+				IncludeSearchPath="$(WDKPATH)\inc\ddk;$(WDKPATH)\inc\api;$(WDKPATH)\inc\crt"
+				ForcedIncludes=""
+				AssemblySearchPath=""
+				ForcedUsingAssemblies=""
+				CompileAsManaged=""
+			/>
+		</Configuration>
+		<Configuration
+			Name="DebugXP_X64|Win32"
+			OutputDirectory="C:\Users\Administrator\Desktop\PC-end\NdisWdm\objchk_wxp_amd64"
+			IntermediateDirectory="C:\Users\Administrator\Desktop\PC-end\NdisWdm\objchk_wxp_amd64"
+			ConfigurationType="0"
+			>
+			<Tool
+				Name="VCNMakeTool"
+				BuildCommandLine="call $(WDKPATH)\bin\setenv.bat $(WDKPATH) x64 chk wxp&#x0D;&#x0A;cd /d C:\Users\Administrator\Desktop\PC-end\NdisWdm&#x0D;&#x0A;build&#x0D;&#x0A;cd /d C:\Users\Administrator\Desktop\PC-end\NdisWdm&#x0D;&#x0A;call copy.bat"
+				ReBuildCommandLine="rmdir /s /q C:\Users\Administrator\Desktop\PC-end\NdisWdm\objchk_wxp_amd64&#x0D;&#x0A;call $(WDKPATH)\bin\setenv.bat $(WDKPATH) x64 chk wxp&#x0D;&#x0A;cd /d C:\Users\Administrator\Desktop\PC-end\NdisWdm&#x0D;&#x0A;build&#x0D;&#x0A;cd /d C:\Users\Administrator\Desktop\PC-end\NdisWdm&#x0D;&#x0A;call copy.bat"
+				CleanCommandLine="rmdir /s /q C:\Users\Administrator\Desktop\PC-end\NdisWdm\objchk_wxp_amd64"
+				Output="C:\Users\Administrator\Desktop\PC-end\NdisWdm\objchk_wxp_amd64\amd64\nengshiNdisWdm.sys"
+				PreprocessorDefinitions="WIN32;_CONSOLE;_X64_;_DDK_;_DEBUG;DBG=1"
+				IncludeSearchPath="$(WDKPATH)\inc\ddk;$(WDKPATH)\inc\api;$(WDKPATH)\inc\crt"
+				ForcedIncludes=""
+				AssemblySearchPath=""
+				ForcedUsingAssemblies=""
+				CompileAsManaged=""
+			/>
+		</Configuration>
+		<Configuration
+			Name="ReleaseXP_X64|Win32"
+			OutputDirectory="C:\Users\Administrator\Desktop\PC-end\NdisWdm\objfre_wxp_amd64"
+			IntermediateDirectory="C:\Users\Administrator\Desktop\PC-end\NdisWdm\objfre_wxp_amd64"
+			ConfigurationType="0"
+			>
+			<Tool
+				Name="VCNMakeTool"
+				BuildCommandLine="call $(WDKPATH)\bin\setenv.bat $(WDKPATH) x64 fre wxp&#x0D;&#x0A;cd /d C:\Users\Administrator\Desktop\PC-end\NdisWdm&#x0D;&#x0A;build&#x0D;&#x0A;cd /d C:\Users\Administrator\Desktop\PC-end\NdisWdm&#x0D;&#x0A;call copy.bat"
+				ReBuildCommandLine="rmdir /s /q C:\Users\Administrator\Desktop\PC-end\NdisWdm\objfre_wxp_amd64&#x0D;&#x0A;call $(WDKPATH)\bin\setenv.bat $(WDKPATH) x64 fre wxp&#x0D;&#x0A;cd /d C:\Users\Administrator\Desktop\PC-end\NdisWdm&#x0D;&#x0A;build&#x0D;&#x0A;cd /d C:\Users\Administrator\Desktop\PC-end\NdisWdm&#x0D;&#x0A;call copy.bat"
+				CleanCommandLine="rmdir /s /q C:\Users\Administrator\Desktop\PC-end\NdisWdm\objfre_wxp_amd64"
+				Output="C:\Users\Administrator\Desktop\PC-end\NdisWdm\objfre_wxp_amd64\amd64\NdisWdm.sys"
+				PreprocessorDefinitions="WIN32;_CONSOLE;_X64_;_DDK_;_NDEBUG;DBG=0"
+				IncludeSearchPath="$(WDKPATH)\inc\ddk;$(WDKPATH)\inc\api;$(WDKPATH)\inc\crt"
+				ForcedIncludes=""
+				AssemblySearchPath=""
+				ForcedUsingAssemblies=""
+				CompileAsManaged=""
+			/>
+		</Configuration>
+		<Configuration
+			Name="DebugWIN7_X64|Win32"
+			OutputDirectory="C:\Users\Administrator\Desktop\PC-end\NdisWdm\objchk_win7_amd64"
+			IntermediateDirectory="C:\Users\Administrator\Desktop\PC-end\NdisWdm\objchk_win7_amd64"
+			ConfigurationType="0"
+			>
+			<Tool
+				Name="VCNMakeTool"
+				BuildCommandLine="call $(WDKPATH)\bin\setenv.bat $(WDKPATH) x64 chk win7&#x0D;&#x0A;cd /d C:\Users\Administrator\Desktop\PC-end\NdisWdm&#x0D;&#x0A;build"
+				ReBuildCommandLine="rmdir /s /q C:\Users\Administrator\Desktop\PC-end\NdisWdm\objchk_win7_amd64&#x0D;&#x0A;call $(WDKPATH)\bin\setenv.bat $(WDKPATH) x64 chk win7&#x0D;&#x0A;cd /d C:\Users\Administrator\Desktop\PC-end\NdisWdm&#x0D;&#x0A;build"
+				CleanCommandLine="rmdir /s /q C:\Users\Administrator\Desktop\PC-end\NdisWdm\objchk_win7_amd64"
+				Output="C:\Users\Administrator\Desktop\PC-end\NdisWdm\objchk_win7_amd64\amd64\NdisWdm.sys"
+				PreprocessorDefinitions="WIN32;_CONSOLE;_X64_;_DDK_;_DEBUG;DBG=1"
+				IncludeSearchPath="$(WDKPATH)\inc\ddk;$(WDKPATH)\inc\api;$(WDKPATH)\inc\crt"
+				ForcedIncludes=""
+				AssemblySearchPath=""
+				ForcedUsingAssemblies=""
+				CompileAsManaged=""
+			/>
+		</Configuration>
+		<Configuration
+			Name="ReleaseWIN7_X64|Win32"
+			OutputDirectory="C:\Users\Administrator\Desktop\PC-end\NdisWdm\objfre_win7_amd64"
+			IntermediateDirectory="C:\Users\Administrator\Desktop\PC-end\NdisWdm\objfre_win7_amd64"
+			ConfigurationType="0"
+			>
+			<Tool
+				Name="VCNMakeTool"
+				BuildCommandLine="call $(WDKPATH)\bin\setenv.bat $(WDKPATH) x64 fre win7&#x0D;&#x0A;cd /d C:\Users\Administrator\Desktop\PC-end\NdisWdm&#x0D;&#x0A;build"
+				ReBuildCommandLine="rmdir /s /q C:\Users\Administrator\Desktop\PC-end\NdisWdm\objfre_win7_amd64&#x0D;&#x0A;call $(WDKPATH)\bin\setenv.bat $(WDKPATH) x64 fre win7&#x0D;&#x0A;cd /d C:\Users\Administrator\Desktop\PC-end\NdisWdm&#x0D;&#x0A;build"
+				CleanCommandLine="rmdir /s /q C:\Users\Administrator\Desktop\PC-end\NdisWdm\objfre_win7_amd64"
+				Output="C:\Users\Administrator\Desktop\PC-end\NdisWdm\objfre_win7_amd64\amd64\NdisWdm.sys"
+				PreprocessorDefinitions="WIN32;_CONSOLE;_X64_;_DDK_;_NDEBUG;DBG=0"
+				IncludeSearchPath="$(WDKPATH)\inc\ddk;$(WDKPATH)\inc\api;$(WDKPATH)\inc\crt"
+				ForcedIncludes=""
+				AssemblySearchPath=""
+				ForcedUsingAssemblies=""
+				CompileAsManaged=""
+			/>
+		</Configuration>
+	</Configurations>
+	<References>
+	</References>
+	<Files>
+		<Filter
+			Name="Source files"
+			Filter="cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx"
+			>
+			<File
+				RelativePath=".\ExCallbk.c"
+				>
+			</File>
+			<File
+				RelativePath=".\init.c"
+				>
+			</File>
+			<File
+				RelativePath=".\ncm.c"
+				>
+			</File>
+			<File
+				RelativePath=".\NdisWdm.c"
+				>
+			</File>
+			<File
+				RelativePath=".\receive.c"
+				>
+			</File>
+			<File
+				RelativePath=".\request.c"
+				>
+			</File>
+			<File
+				RelativePath=".\send.c"
+				>
+			</File>
+			<File
+				RelativePath=".\usbcdc.c"
+				>
+			</File>
+			<File
+				RelativePath=".\usbpnp.c"
+				>
+			</File>
+			<File
+				RelativePath=".\USBPWR.c"
+				>
+			</File>
+		</Filter>
+		<Filter
+			Name="Resource files"
+			Filter="rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav"
+			>
+			<File
+				RelativePath=".\ndiswdm.rc"
+				>
+			</File>
+		</Filter>
+		<Filter
+			Name="Header files"
+			Filter="h;hpp;hxx;hm;inl;inc;xsd"
+			>
+			<File
+				RelativePath=".\cdc.h"
+				>
+			</File>
+			<File
+				RelativePath=".\ncm.h"
+				>
+			</File>
+			<File
+				RelativePath=".\NdisWdm.h"
+				>
+			</File>
+			<File
+				RelativePath=".\nuiouser.h"
+				>
+			</File>
+			<File
+				RelativePath=".\resource.h"
+				>
+			</File>
+			<File
+				RelativePath=".\usbpnp.h"
+				>
+			</File>
+			<File
+				RelativePath=".\USBPWR.h"
+				>
+			</File>
+		</Filter>
+		<File
+			RelativePath=".\sources"
+			>
+		</File>
+	</Files>
+	<Globals>
+	</Globals>
+</VisualStudioProject>

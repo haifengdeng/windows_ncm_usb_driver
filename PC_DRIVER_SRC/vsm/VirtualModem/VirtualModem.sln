@@ -1,0 +1,45 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "VirtualModem", "VirtualModem.vcproj", "{7A03C100-AA76-4F04-B910-E1E9AFDCB5C8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+		DebugWIN7|Win32 = DebugWIN7|Win32
+		DebugWXP|Win32 = DebugWXP|Win32
+		Release|Win32 = Release|Win32
+		ReleaseWIN7|Win32 = ReleaseWIN7|Win32
+		ReleaseWXP|Win32 = ReleaseWXP|Win32
+		DebugWIN7_X64|Win32 = DebugWIN7_X64|Win32
+		DebugWXP_X64|Win32 = DebugWXP_X64|Win32
+		ReleaseWIN7_X64|Win32 = ReleaseWIN7_X64|Win32
+		ReleaseWXP_X64|Win32 = ReleaseWXP_X64|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7A03C100-AA76-4F04-B910-E1E9AFDCB5C8}.Debug|Win32.ActiveCfg = DebugWIN7|Win32
+		{7A03C100-AA76-4F04-B910-E1E9AFDCB5C8}.Debug|Win32.Build.0 = DebugWIN7|Win32
+		{7A03C100-AA76-4F04-B910-E1E9AFDCB5C8}.DebugWIN7|Win32.ActiveCfg = DebugWIN7|Win32
+		{7A03C100-AA76-4F04-B910-E1E9AFDCB5C8}.DebugWIN7|Win32.Build.0 = DebugWIN7|Win32
+		{7A03C100-AA76-4F04-B910-E1E9AFDCB5C8}.DebugWXP|Win32.ActiveCfg = DebugWXP|Win32
+		{7A03C100-AA76-4F04-B910-E1E9AFDCB5C8}.DebugWXP|Win32.Build.0 = DebugWXP|Win32
+		{7A03C100-AA76-4F04-B910-E1E9AFDCB5C8}.Release|Win32.ActiveCfg = ReleaseWIN7|Win32
+		{7A03C100-AA76-4F04-B910-E1E9AFDCB5C8}.Release|Win32.Build.0 = ReleaseWIN7|Win32
+		{7A03C100-AA76-4F04-B910-E1E9AFDCB5C8}.ReleaseWIN7|Win32.ActiveCfg = ReleaseWIN7|Win32
+		{7A03C100-AA76-4F04-B910-E1E9AFDCB5C8}.ReleaseWIN7|Win32.Build.0 = ReleaseWIN7|Win32
+		{7A03C100-AA76-4F04-B910-E1E9AFDCB5C8}.ReleaseWXP|Win32.ActiveCfg = ReleaseWXP|Win32
+		{7A03C100-AA76-4F04-B910-E1E9AFDCB5C8}.ReleaseWXP|Win32.Build.0 = ReleaseWXP|Win32
+		{7A03C100-AA76-4F04-B910-E1E9AFDCB5C8}.DebugWIN7_X64|Win32.ActiveCfg = DebugWIN7_X64|Win32
+		{7A03C100-AA76-4F04-B910-E1E9AFDCB5C8}.DebugWIN7_X64|Win32.Build.0 = DebugWIN7_X64|Win32
+		{7A03C100-AA76-4F04-B910-E1E9AFDCB5C8}.DebugWXP_X64|Win32.ActiveCfg = DebugWXP_X64|Win32
+		{7A03C100-AA76-4F04-B910-E1E9AFDCB5C8}.DebugWXP_X64|Win32.Build.0 = DebugWXP_X64|Win32
+		{7A03C100-AA76-4F04-B910-E1E9AFDCB5C8}.ReleaseWIN7_X64|Win32.ActiveCfg = ReleaseWIN7_X64|Win32
+		{7A03C100-AA76-4F04-B910-E1E9AFDCB5C8}.ReleaseWIN7_X64|Win32.Build.0 = ReleaseWIN7_X64|Win32
+		{7A03C100-AA76-4F04-B910-E1E9AFDCB5C8}.ReleaseWXP_X64|Win32.ActiveCfg = ReleaseWXP_X64|Win32
+		{7A03C100-AA76-4F04-B910-E1E9AFDCB5C8}.ReleaseWXP_X64|Win32.Build.0 = ReleaseWXP_X64|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
